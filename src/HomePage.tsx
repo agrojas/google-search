@@ -25,7 +25,6 @@ function HomePage() {
   };
 
   const handlePredictorClick = (prediction: string) => {
-    console.log("Prediction clicked:", prediction);
     setSearchQuery(prediction);
     setShowPredictor(false);
     navigate(`/search?q=${prediction}`); // Navegar a la página de resultados de búsqueda
@@ -74,7 +73,6 @@ function HomePage() {
 
             {showPredictor && searchQuery.length > 0 && (
               <>
-                {console.log("Rendering predictions", filteredPredictions)}{" "}
                 {/* Verifica que esto se muestre */}
                 <div className="absolute w-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg z-10">
                   {filteredPredictions.map((prediction, index) => (
@@ -82,7 +80,6 @@ function HomePage() {
                       key={index}
                       className="px-4 py-2 flex items-center hover:bg-gray-100 cursor-pointer"
                       onClick={() => {
-                        console.log("Clicked on:", prediction); // Ver si el clic es capturado
                         handlePredictorClick(prediction);
                       }}
                     >
