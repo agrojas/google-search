@@ -1,28 +1,18 @@
-import React, { useState, useRef, useEffect } from "react";
-import { Search, Grid, Mic, Camera } from "lucide-react";
+import React, { useState, useRef } from "react";
+import { Search, Mic, Camera } from "lucide-react";
+import { PREDICTION_RESULTS } from "./mocks/predictions";
 import {
   BrowserRouter as Router,
   Route,
   Routes,
   useNavigate,
 } from "react-router-dom";
-import { RESULTS } from "./mocks/results";
-import { IMAGE_RESULTS } from "./mocks/image-results";
-import { PREDICTION_RESULTS } from "./mocks/predictions";
 
-// Definir el Enum con las variantes permitidas
-enum ValidSearchTerms {
-  ORTIZ_1 = "dr ortiz",
-  ORTIZ_2 = "Dr Ortiz",
-  ORTIZ_3 = "DR ORTIZ",
-}
-
-function App() {
+function HomePage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [showPredictor, setShowPredictor] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const navigate = useNavigate(); // Hook para navegar a otra ruta
-
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -119,46 +109,4 @@ function App() {
   );
 }
 
-function SearchResults() {
-  const queryParams = new URLSearchParams(window.location.search);
-  const query = queryParams.get("query");
-
-  // Resultados ficticios
-  const results = [
-    { id: 1, title: "Result 1", description: `Results for ${query} - 1` },
-    { id: 2, title: "Result 2", description: `Results for ${query} - 2` },
-    { id: 3, title: "Result 3", description: `Results for ${query} - 3` },
-    { id: 4, title: "Result 4", description: `Results for ${query} - 4` },
-    { id: 5, title: "Result 5", description: `Results for ${query} - 5` },
-  ];
-
-  return (
-    <div className="min-h-screen bg-white p-8">
-      <h2 className="text-2xl font-semibold mb-4">
-        Search Results for "{query}"
-      </h2>
-      <ul className="space-y-4">
-        {results.map((result) => (
-          <li key={result.id} className="p-4 bg-gray-100 rounded-lg shadow">
-            <h3 className="text-lg font-semibold">{result.title}</h3>
-            <p className="text-gray-600">{result.description}</p>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-// Configuración de las rutas
-function AppRouter() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/search" element={<SearchResults />} />
-      </Routes>
-    </Router>
-  );
-}
-
-export default AppRouter;
+export default HomePage;
