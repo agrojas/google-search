@@ -8,16 +8,11 @@ export type SearchResult = {
 };
 
 export type SearchResults = {
-  [key: string]: {
-    results: SearchResult[];
-    total: number;
-    searchTime: number;
-  };
+  [key: string]: SearchResult[];
 };
 
 export const SCRIPT_RESULTS: SearchResults = {
-  "Dr. Ortiz Clinica Galilea": {
-    results: [
+  ORTIZ: [
       {
         title: "Dr. Ortiz - Clínica Galilea | Medicina Funcional",
         url: "https://clinicagalilea.com/dr-ortiz",
@@ -27,17 +22,12 @@ export const SCRIPT_RESULTS: SearchResults = {
         type: "medical",
       },
     ],
-    total: 1,
-    searchTime: 0.42,
-  },
-  "NOTAS AUTOPUNTES": {
-    results: [
+  BONAR:  [
       {
-        title: "Notas Autopuntes - Repasitos y material de estudio",
-        url: "https://autopuntes.com/notas",
-        displayUrl: "autopuntes.com › notas",
-        description:
-          "Accede a miles de apuntes y notas de estudio. Comparte tus propios materiales...",
+        title: "Bonar Autopartes",
+        url: "/bonar",
+        displayUrl: "www.bonar-autopartes.com › inicio",
+        description: "Bonar autopartes, repuestos, venta mayoristas.",
         type: "notes",
       },
       {
@@ -49,11 +39,7 @@ export const SCRIPT_RESULTS: SearchResults = {
         type: "notes",
       },
     ],
-    total: 2,
-    searchTime: 0.38,
-  },
-  "MEDICINA FUNCIONAL": {
-    results: [
+ PENAS: [
       {
         title: "¿Qué es la Medicina Funcional? - Definición y Beneficios",
         url: "https://medicinafuncional.org",
@@ -62,8 +48,6 @@ export const SCRIPT_RESULTS: SearchResults = {
           "La medicina funcional es un enfoque sistémico que se centra en identificar y abordar la causa raíz de la enfermedad...",
         type: "medical",
       },
-    ],
-    total: 1,
-    searchTime: 0.45,
-  },
-};
+    ]
+  };
+

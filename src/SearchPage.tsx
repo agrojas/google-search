@@ -1,110 +1,46 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useSearchParams, Link } from "react-router-dom";
-import { Search, Mic, Camera, Settings, Menu } from "lucide-react";
+import { Search, Mic, Camera, Settings, Menu, ChevronDown } from "lucide-react";
 import ImageResults from "./components/ImageResults";
-import { SCRIPT_RESULTS, SearchResult } from "./mocks/script-results";
-
-// Resultados por defecto cuando no hay coincidencia en el guion
-const DEFAULT_SEARCH_RESULTS: SearchResult[] = [
-  {
-    title: "Dr. Javier Ortiz - Ginecólogo - CIM",
-    url: "https://www.consultoriointegral.com.ar",
-    displayUrl: "consultoriointegral.com.ar › equipo-médico",
-    description:
-      "Prof. Adjunto de Ginecología. Jefe de Ginecología del Hospital de Clínicas. Especialista en cirugía laparoscópica e histeroscopia. Prof. Dr. José María Méndez...",
-    type: "medical",
-  },
-  {
-    title: "Dr. Javier E. Ortiz opiniones - Doctoralia",
-    url: "https://www.doctoralia.com.ar",
-    displayUrl: "doctoralia.com.ar › doctor-ortiz",
-    description:
-      "Consultorio privado. PACHECO DE MELO 3026 PISO PB (DPTO 2), Capital Federal · (mapa) · Ampliar. Este especialista no ofrece reserva online en esta dirección. ⭐⭐⭐⭐⭐ Calificación: 5 · 2 opiniones",
-    type: "medical",
-  },
-  {
-    title: "Entrevista al Dr. Javier Ortiz sobre Miomas Uterinos",
-    url: "https://www.sogiba.org.ar",
-    displayUrl: "sogiba.org.ar › index.php › notas-cientificas",
-    description:
-      "Entrevista al Dr. Javier Ortiz sobre Miomas Uterinos. Fuente: Revista Salud Interactiva. Acceder a la nota. Publicaciones.",
-    type: "medical",
-  },
-  {
-    title: "Dr. Ortiz - Centro Médico Especializado",
-    url: "https://www.centromedico.com.ar",
-    displayUrl: "centromedico.com.ar › profesionales",
-    description:
-      "Médico especialista en Ginecología y Obstetricia. Más de 20 años de experiencia. Atención personalizada y seguimiento integral de pacientes.",
-    type: "medical",
-  },
-];
+import { getLegalContent } from "./mocks/predictions";
+import { SCRIPT_RESULTS } from "./mocks/script-results";
 
 const SearchPage = () => {
   const [searchParams] = useSearchParams();
   const query = searchParams.get("q") || "";
   const [activeTab, setActiveTab] = useState("todo");
-  const [currentResults, setCurrentResults] = useState<SearchResult[]>([]);
-  const [searchMetrics, setSearchMetrics] = useState({ total: 0, time: 0 });
+  const [expandedQuestion, setExpandedQuestion] = useState<string | null>(null);
 
-  useEffect(() => {
-    // Buscar en los resultados del guion primero
-    const scriptResult = SCRIPT_RESULTS[query];
-    if (scriptResult) {
-      setCurrentResults(scriptResult.results);
-      setSearchMetrics({
-        total: scriptResult.total,
-        time: scriptResult.searchTime,
-      });
-    } else {
-      // Usar los resultados por defecto como fallback
-      setCurrentResults(DEFAULT_SEARCH_RESULTS);
-      setSearchMetrics({
-        total: Math.floor(Math.random() * 100000),
-        time: Number((Math.random() * 0.5).toFixed(2)),
-      });
+  const legalContent = getLegalContent(query);
+
+  const getSearchResults = () => {
+    if (legalContent) {
+      return [
+        {
+          title: legalContent.title,
+          url: legalContent.url,
+          displayUrl: legalContent.source,
+          description: legalContent.content,
+        },
+      ];
     }
-  }, [query]);
 
-  const renderResultCard = (result: SearchResult) => {
-    const cardClasses = {
-      medical: "border-l-4 border-blue-500 pl-4",
-      notes: "border-l-4 border-green-500 pl-4",
-      general: "",
-    };
+    if (query.toLowerCase().includes("ortiz")) {
+      return SCRIPT_RESULTS.ORTIZ;
+    }
+      if (query.toLowerCase().includes("bonar")) {
+        return SCRIPT_RESULTS.BONAR;
+      }
 
-    return (
-      <div
-        className={`mb-8 ${
-          result.type
-            ? cardClasses[result.type as keyof typeof cardClasses]
-            : ""
-        }`}
-      >
-        <div className="flex items-start">
-          <div>
-            <p className="text-sm text-gray-600">{result.displayUrl}</p>
-            <h3 className="text-xl mb-1">
-              <a
-                href={result.url}
-                className="text-blue-800 hover:underline visited:text-purple-900"
-              >
-                {result.title}
-              </a>
-            </h3>
-            <p className="text-sm text-gray-600 leading-6">
-              {result.description}
-            </p>
-          </div>
-        </div>
-      </div>
-    );
+    return [];
   };
+
+  const searchResults = getSearchResults();
 
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="sticky top-0 bg-white border-b">
+      <header className="sticky top-0 bg-white border-b z-50">
         <div className="flex items-center px-6 py-3">
           <Link to="/">
             <img
@@ -143,7 +79,7 @@ const SearchPage = () => {
               <Menu className="h-5 w-5 text-gray-600" />
             </button>
             <button className="ml-2 bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600">
-              Iniciar sesión
+              Acceder
             </button>
           </div>
         </div>
@@ -192,12 +128,65 @@ const SearchPage = () => {
         }`}
       >
         <p className="text-sm text-gray-600 mb-5 py-4">
-          Cerca de {searchMetrics.total.toLocaleString()} resultados (
-          {searchMetrics.time} segundos)
+          Cerca de {Math.floor(Math.random() * 100000)} resultados (0.
+          {Math.floor(Math.random() * 100)} segundos)
         </p>
 
         {activeTab === "todo" ? (
-          currentResults.map((result) => renderResultCard(result))
+          <div>
+            {searchResults.map((result, index) => (
+              <div key={index} className="mb-8">
+                <div className="flex items-start">
+                  <div>
+                    <p className="text-sm text-gray-600">{result.displayUrl}</p>
+                    <h3 className="text-xl mb-1">
+                      <a
+                        href={result.url}
+                        className="text-blue-800 hover:underline visited:text-purple-900"
+                      >
+                        {result.title}
+                      </a>
+                    </h3>
+                    <p className="text-sm text-gray-600 leading-6">
+                      {result.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+
+            {legalContent && (
+              <div className="mt-8">
+                <h2 className="text-xl mb-4">Más preguntas</h2>
+                {legalContent.questions.map((question, index) => (
+                  <div key={index} className="border-b">
+                    <button
+                      className="w-full py-4 px-2 flex items-center justify-between hover:bg-gray-50"
+                      onClick={() =>
+                        setExpandedQuestion(
+                          expandedQuestion === question ? null : question
+                        )
+                      }
+                    >
+                      <span>{question}</span>
+                      <ChevronDown
+                        className={`h-5 w-5 transition-transform ${
+                          expandedQuestion === question
+                            ? "transform rotate-180"
+                            : ""
+                        }`}
+                      />
+                    </button>
+                    {expandedQuestion === question && (
+                      <div className="p-4 bg-gray-50">
+                        <p>Respuesta simulada para: {question}</p>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
         ) : (
           <ImageResults />
         )}
