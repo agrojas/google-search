@@ -1,38 +1,47 @@
 import React, { useState, useRef } from "react";
 import { Search, Mic, Camera } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import { PREDICTION_RESULTS } from "./mocks/predictions";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  useNavigate,
-} from "react-router-dom";
 
 function HomePage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [showPredictor, setShowPredictor] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
-  const navigate = useNavigate(); // Hook para navegar a otra ruta
+  const navigate = useNavigate();
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    navigate(`/search?q=${searchQuery}`); // Navegar a la página de resultados de búsqueda
+    navigate(`/search?q=${searchQuery}`);
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchQuery(e.target.value);
-    setShowPredictor(e.target.value.length > 0);
+    const value = e.target.value;
+    setSearchQuery(value);
+    setShowPredictor(value.length > 0);
   };
 
   const handlePredictorClick = (prediction: string) => {
     setSearchQuery(prediction);
     setShowPredictor(false);
-    navigate(`/search?q=${prediction}`); // Navegar a la página de resultados de búsqueda
+    navigate(`/search?q=${prediction}`);
   };
 
-  const filteredPredictions = PREDICTION_RESULTS["ORTIZ"].filter((prediction) =>
-    prediction.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const getPredictions = (query: string) => {
+    const normalizedQuery = query.toLowerCase();
+    if (normalizedQuery.includes("pen")) {
+      return PREDICTION_RESULTS.PENAS;
+    }
+    if (normalizedQuery.includes("ort")) {
+      return PREDICTION_RESULTS.ORTIZ;
+    }
+
+    if (normalizedQuery.includes("bon")) {
+      return PREDICTION_RESULTS.BONAR;
+    }
+    return [];
+  };
+
+  const filteredPredictions = getPredictions(searchQuery);
 
   return (
     <div className="min-h-screen bg-white">
@@ -72,32 +81,27 @@ function HomePage() {
             </div>
 
             {showPredictor && searchQuery.length > 0 && (
-              <>
-                {/* Verifica que esto se muestre */}
-                <div className="absolute w-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg z-10">
-                  {filteredPredictions.map((prediction, index) => (
-                    <div
-                      key={index}
-                      className="px-4 py-2 flex items-center hover:bg-gray-100 cursor-pointer"
-                      onClick={() => {
-                        handlePredictorClick(prediction);
-                      }}
-                    >
-                      <Search className="h-4 w-4 text-gray-400 mr-3" />
-                      <span className="text-sm">{prediction}</span>
-                    </div>
-                  ))}
-                </div>
-              </>
+              <div className="absolute w-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg z-10">
+                {filteredPredictions.map((prediction, index) => (
+                  <div
+                    key={index}
+                    className="px-4 py-2 flex items-center hover:bg-gray-100 cursor-pointer"
+                    onClick={() => handlePredictorClick(prediction)}
+                  >
+                    <Search className="h-4 w-4 text-gray-400 mr-3" />
+                    <span className="text-sm">{prediction}</span>
+                  </div>
+                ))}
+              </div>
             )}
           </form>
 
           <div className="flex justify-center space-x-3 mt-8">
             <button className="px-4 py-2 bg-gray-50 text-sm text-gray-600 rounded hover:border hover:border-gray-200 hover:shadow-sm">
-              Google Search
+              Buscar con Google
             </button>
             <button className="px-4 py-2 bg-gray-50 text-sm text-gray-600 rounded hover:border hover:border-gray-200 hover:shadow-sm">
-              I'm Feeling Lucky
+              Me siento con suerte
             </button>
           </div>
         </div>
