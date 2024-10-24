@@ -13,41 +13,50 @@ export type SearchResults = {
 
 export const SCRIPT_RESULTS: SearchResults = {
   ORTIZ: [
-      {
-        title: "Dr. Ortiz - Clínica Galilea | Medicina Funcional",
-        url: "https://clinicagalilea.com/dr-ortiz",
-        displayUrl: "clinicagalilea.com › especialistas",
-        description:
-          "Especialista en Medicina Funcional y Sistémica. Más de 15 años de experiencia en tratamientos integrativos...",
-        type: "medical",
-      },
-    ],
-  BONAR:  [
-      {
-        title: "Bonar Autopartes",
-        url: "/bonar",
-        displayUrl: "www.bonar-autopartes.com › inicio",
-        description: "Bonar autopartes, repuestos, venta mayoristas.",
-        type: "notes",
-      },
-      {
-        title: "Venta Autopuntes - Material académico verificado",
-        url: "https://autopuntes.com/venta",
-        displayUrl: "autopuntes.com › venta",
-        description:
-          "Marketplace de apuntes y materiales de estudio revisados...",
-        type: "notes",
-      },
-    ],
- PENAS: [
-      {
-        title: "¿Qué es la Medicina Funcional? - Definición y Beneficios",
-        url: "https://medicinafuncional.org",
-        displayUrl: "medicinafuncional.org › inicio",
-        description:
-          "La medicina funcional es un enfoque sistémico que se centra en identificar y abordar la causa raíz de la enfermedad...",
-        type: "medical",
-      },
-    ]
-  };
-
+    {
+      title: "Dr. Ortiz - Clínica Galilea | Medicina Funcional",
+      url: "https://clinicagalilea.com/dr-ortiz",
+      displayUrl: "clinicagalilea.com › especialistas",
+      description:
+        "Especialista en Medicina Funcional y Sistémica. Más de 15 años de experiencia en tratamientos integrativos...",
+      type: "medical",
+    },
+  ],
+  BONAR: [
+    {
+      title: "Bonar Autopartes",
+      url: "/bonar",
+      displayUrl: "www.bonar-autopartes.com › inicio",
+      description: "Bonar autopartes, repuestos, venta mayoristas.",
+      type: "notes",
+    },
+    {
+      title: "Venta Autopuntes - Material académico verificado",
+      url: "https://autopuntes.com/venta",
+      displayUrl: "autopuntes.com › venta",
+      description:
+        "Marketplace de apuntes y materiales de estudio revisados...",
+      type: "notes",
+    },
+  ],
+  PENAS: [
+    {
+      title: "¿Qué es la Medicina Funcional? - Definición y Beneficios",
+      url: "https://medicinafuncional.org",
+      displayUrl: "medicinafuncional.org › inicio",
+      description:
+        "La medicina funcional es un enfoque sistémico que se centra en identificar y abordar la causa raíz de la enfermedad...",
+      type: "medical",
+    },
+  ],
+  MATRICULA: [
+    {
+      title: "Matrícula de Fumigador - Requisitos y Trámites",
+      url: "https://matriculafumigador.com",
+      displayUrl: "matriculafumigador.com › inicio",
+      description:
+        "Requisitos y trámites para obtener la matrícula de fumigador en Argentina...",
+      type: "general",
+    },
+  ],
+};

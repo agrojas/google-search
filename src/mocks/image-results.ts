@@ -7,7 +7,7 @@ export interface ImageResult {
 }
 
 export const IMAGE_RESULTS: { [key: string]: ImageResult[] } = {
-  "Dr. Ortiz Clinica Galilea": [
+  ORTIZ: [
     {
       id: 1,
       title: "Dr. Javier Ortiz - Ginecólogo",
@@ -57,6 +57,16 @@ export const IMAGE_RESULTS: { [key: string]: ImageResult[] } = {
       link: "https://www.instagram.com",
     },
   ],
-  "NOTAS AUTOPUNTES": [],
-  "MEDICINA FUNCIONAL": [],
+  BONAR: [],
+  PENAS: [],
+  MATRICULA: [
+    {
+      "id": 1,
+      "title": "Matrícula de Fumigador",
+      "thumbnail": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=300&fit=crop",
+      "source": "CIM",
+      "link": "https://www.consultoriointegral.com.ar"
+
+    }
+  ],
 };

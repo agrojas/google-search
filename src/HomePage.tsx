@@ -38,6 +38,10 @@ function HomePage() {
     if (normalizedQuery.includes("bon")) {
       return PREDICTION_RESULTS.BONAR;
     }
+
+    if (normalizedQuery.includes("mat")) {
+      return PREDICTION_RESULTS.MATRICULA;
+    }
     return [];
   };
 

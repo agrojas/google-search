@@ -21,6 +21,9 @@ export const PREDICTION_RESULTS: { [key: string]: string[] } = {
   ],
   BONAR: [
     "bonar autopartes",
+  ],
+  MATRICULA: [
+    "matricula fumigador"
   ]
 };
 

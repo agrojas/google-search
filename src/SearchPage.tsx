@@ -28,9 +28,12 @@ const SearchPage = () => {
     if (query.toLowerCase().includes("ortiz")) {
       return SCRIPT_RESULTS.ORTIZ;
     }
-      if (query.toLowerCase().includes("bonar")) {
-        return SCRIPT_RESULTS.BONAR;
-      }
+    if (query.toLowerCase().includes("bonar")) {
+      return SCRIPT_RESULTS.BONAR;
+    }
+    if (query.toLowerCase().includes("matricula")) {
+      return SCRIPT_RESULTS.MATRICULA;
+    }
 
     return [];
   };
