@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { IMAGE_RESULTS, ImageResult } from "../mocks/image-results";
 
-
 // Resultados por defecto cuando no hay coincidencia
 const DEFAULT_IMAGE_RESULTS: ImageResult[] = [
   {
@@ -43,7 +42,20 @@ const ImageResults = () => {
 
   useEffect(() => {
     // Buscar en los resultados del script primero
-    const scriptResult = IMAGE_RESULTS[query];
+    let scriptResult = DEFAULT_IMAGE_RESULTS;
+    const normalizedQuery = query.toLowerCase();
+    if (normalizedQuery.includes("penas")) {
+      scriptResult = IMAGE_RESULTS.PENAS;
+    }
+     if (normalizedQuery.includes("ortiz")) {
+       scriptResult = IMAGE_RESULTS.ORTIZ;
+     }
+      if (normalizedQuery.includes("bonar")) {
+        scriptResult = IMAGE_RESULTS.BONAR;
+      }
+       if (normalizedQuery.includes("matricula")) {
+         scriptResult = IMAGE_RESULTS.MATRICULA;
+       }
     if (scriptResult) {
       setCurrentImages(scriptResult);
       setSearchMetrics({
