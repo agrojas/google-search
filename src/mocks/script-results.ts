@@ -2,9 +2,12 @@
 export type SearchResult = {
   title: string;
   url: string;
-  displayUrl: string;
-  description: string;
+  displayUrl?: string;
+  description?: string;
   type?: "medical" | "notes" | "general";
+  content?: string;
+  source?: string;
+  questions?: string[];
 };
 
 export type SearchResults = {
@@ -126,15 +129,148 @@ export const SCRIPT_RESULTS: SearchResults = {
         "Marketplace de apuntes y materiales de estudio revisados...",
       type: "notes",
     },
+    {
+      title: "ElectroHouse - Electrónica y Hogar",
+      url: "/electrohouse",
+      displayUrl: "www.electrohouse.com › inicio",
+      description: "Venta de artículos electrónicos y para el hogar.",
+      type: "notes",
+    },
+    {
+      title: "La Casa del Estudiante",
+      url: "/casadelestudiante",
+      displayUrl: "www.casadelestudiante.com › inicio",
+      description: "Apuntes, guías de estudio y asesoría académica.",
+      type: "notes",
+    },
+    {
+      title: "Autopartes Soluciones",
+      url: "/autopartessoluciones",
+      displayUrl: "www.autopartessoluciones.com › productos",
+      description: "Repuestos y soluciones para automóviles de todo tipo.",
+      type: "notes",
+    },
+    {
+      title: "Apuntes Universitarios",
+      url: "https://apuntesuniversitarios.com",
+      displayUrl: "apuntesuniversitarios.com › inicio",
+      description: "Notas y apuntes para distintas carreras universitarias.",
+      type: "notes",
+    },
+    {
+      title: "Accesorios y Repuestos para Autos",
+      url: "/repuestosautos",
+      displayUrl: "www.repuestosautos.com › inicio",
+      description: "Venta de accesorios y repuestos de alta calidad.",
+      type: "notes",
+    },
+    {
+      title: "Biblioteca Digital de Apuntes",
+      url: "https://bibliotecaapuntes.com",
+      displayUrl: "bibliotecaapuntes.com › inicio",
+      description: "Colección de apuntes académicos en formato digital.",
+      type: "notes",
+    },
+    {
+      title: "Punto Auto - Autopartes al Mejor Precio",
+      url: "/puntoauto",
+      displayUrl: "www.puntoauto.com › inicio",
+      description: "Distribuidor de autopartes a precios accesibles.",
+      type: "notes",
+    },
+    {
+      title: "Material Didáctico Escolar",
+      url: "/materialdidactico",
+      displayUrl: "www.materialdidactico.com › inicio",
+      description: "Apuntes y recursos para nivel escolar y universitario.",
+      type: "notes",
+    },
+    {
+      title: "Autopartes Repuestos Rápidos",
+      url: "/repuestosrapidos",
+      displayUrl: "www.repuestosrapidos.com › inicio",
+      description: "Provisión rápida de repuestos y accesorios automotrices.",
+      type: "notes",
+    },
+    {
+      title: "Guía de Estudio Secundaria",
+      url: "/guiasecundaria",
+      displayUrl: "www.guiasecundaria.com › inicio",
+      description: "Recursos de estudio para estudiantes de secundaria.",
+      type: "notes",
+    },
+    {
+      title: "Accesorios Auto Pro",
+      url: "/accesoriosautopro",
+      displayUrl: "www.accesoriosautopro.com › inicio",
+      description:
+        "Accesorios de calidad para automóviles de todas las marcas.",
+      type: "notes",
+    },
+    {
+      title: "Tienda de Apuntes Académicos",
+      url: "/tiendaapuntes",
+      displayUrl: "www.tiendaapuntes.com › inicio",
+      description: "Venta de apuntes académicos por materia y carrera.",
+      type: "notes",
+    },
+    {
+      title: "Motor Partes Express",
+      url: "/motorpartes",
+      displayUrl: "www.motorpartes.com › inicio",
+      description: "Repuestos especializados para motores de autos.",
+      type: "notes",
+    },
+    {
+      title: "Apuntes Online para Universitarios",
+      url: "/apuntesonline",
+      displayUrl: "www.apuntesonline.com › inicio",
+      description:
+        "Material de estudio para universitarios en formato digital.",
+      type: "notes",
+    },
+    {
+      title: "Mundo Auto - Autopartes y Repuestos",
+      url: "/mundoauto",
+      displayUrl: "www.mundoauto.com › inicio",
+      description: "Amplia variedad de autopartes para diferentes marcas.",
+      type: "notes",
+    },
+    {
+      title: "Red de Apuntes Académicos",
+      url: "/redapuntes",
+      displayUrl: "www.redapuntes.com › inicio",
+      description: "Comunidad de apuntes y recursos educativos compartidos.",
+      type: "notes",
+    },
+    {
+      title: "Repuestos AutoCenter",
+      url: "/autocenter",
+      displayUrl: "www.autocenter.com › inicio",
+      description: "Tienda de repuestos y accesorios para autos.",
+      type: "notes",
+    },
+    {
+      title: "Apuntes Pro - Material Exclusivo",
+      url: "/apuntespro",
+      displayUrl: "www.apuntespro.com › inicio",
+      description: "Apuntes exclusivos y de alta calidad para estudiantes.",
+      type: "notes",
+    },
   ],
   PENAS: [
     {
-      title: "¿Qué es la Medicina Funcional? - Definición y Beneficios",
-      url: "https://medicinafuncional.org",
-      displayUrl: "medicinafuncional.org › inicio",
-      description:
-        "La medicina funcional es un enfoque sistémico que se centra en identificar y abordar la causa raíz de la enfermedad...",
-      type: "medical",
+      title:
+        'Art. 200: "Será reprimido con reclusión o prisión de tres a diez años',
+      content:
+        'el que envenenare o adulterare, de un modo peligroso para la salud, aguas potables o sustancias alimenticias o medicinales, destinadas al uso público o al consumo de una colectividad de personas".',
+      source: "Revista Pensamiento Penal",
+      url: "https://www.pensamientopenal.com.ar/cpc38027",
+      questions: [
+        "¿Cuántos años de cárcel dan por envenenamiento?",
+        "¿Qué dice el artículo 247 del Código Penal Argentino?",
+        "¿Qué es el envenenamiento en derecho penal?",
+      ],
     },
   ],
   MATRICULA: [

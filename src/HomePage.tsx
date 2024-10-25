@@ -28,18 +28,18 @@ function HomePage() {
 
   const getPredictions = (query: string) => {
     const normalizedQuery = query.toLowerCase();
-    if (normalizedQuery.includes("pen")) {
+    if (normalizedQuery.includes("pen") || normalizedQuery.includes("env")) {
       return PREDICTION_RESULTS.PENAS;
     }
     if (normalizedQuery.includes("dr") || normalizedQuery.includes("ort")) {
       return PREDICTION_RESULTS.ORTIZ;
     }
 
-    if (normalizedQuery.includes("bon")) {
+    if (normalizedQuery.includes("bon") || normalizedQuery.includes("aut")) {
       return PREDICTION_RESULTS.BONAR;
     }
 
-    if (normalizedQuery.includes("mat")) {
+    if (normalizedQuery.includes("mat") || normalizedQuery.includes("fum")) {
       return PREDICTION_RESULTS.MATRICULA;
     }
     return [];
