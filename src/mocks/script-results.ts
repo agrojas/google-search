@@ -2,12 +2,9 @@
 export type SearchResult = {
   title: string;
   url: string;
-  displayUrl?: string;
+  displayUrl: string;
   description?: string;
-  type?: "medical" | "notes" | "general";
-  content?: string;
-  source?: string;
-  questions?: string[];
+  type: "medical" | "notes" | "general";
 };
 
 export type SearchResults = {
@@ -262,16 +259,44 @@ export const SCRIPT_RESULTS: SearchResults = {
     {
       title:
         'Art. 200: "Será reprimido con reclusión o prisión de tres a diez años',
-      content:
+      description:
         'el que envenenare o adulterare, de un modo peligroso para la salud, aguas potables o sustancias alimenticias o medicinales, destinadas al uso público o al consumo de una colectividad de personas".',
-      source: "Revista Pensamiento Penal",
+      displayUrl: "Revista Pensamiento Penal",
       url: "https://www.pensamientopenal.com.ar/cpc38027",
-      questions: [
-        "¿Cuántos años de cárcel dan por envenenamiento?",
-        "¿Qué dice el artículo 247 del Código Penal Argentino?",
-        "¿Qué es el envenenamiento en derecho penal?",
-      ],
+      type: "notes",
     },
+    {
+      title: "Código Penal Argentino - Artículo 201",
+      description:
+        "El que fabricare, preparare, suministrare o vendiere sustancias nocivas para la salud será penado con prisión de uno a cuatro años.",
+      displayUrl: "Ley Argentina",
+      url: "https://www.leyargentina.com.ar/art201",
+      type: "notes",
+    },
+    {
+      title: "Penas por Envenenamiento de Alimentos - Art. 202",
+      description:
+        "El artículo 202 establece sanciones adicionales para delitos relacionados con alimentos adulterados.",
+      displayUrl: "Código Penal - Argentina",
+      url: "https://www.codigopenal.com.ar/art202",
+      type: "notes",
+    },
+    {
+      title: "Modificaciones del Artículo 200 - Jurisprudencia",
+      description:
+        "Análisis de jurisprudencia actualizada sobre el artículo 200 y sus interpretaciones en tribunales.",
+      displayUrl: "Doctrina Penal",
+      url: "https://www.doctrinapenal.com.ar/art200-jurisprudencia",
+      type: "notes",
+    },
+    {
+      title: "Interpretación del Artículo 203 - Código Penal",
+      description:
+        "El artículo 203 se refiere a sanciones por negligencia en la manipulación de sustancias peligrosas.",
+      displayUrl: "Abogados Penalistas",
+      url: "https://www.abogadopenalista.com.ar/art203",
+      type: "notes",
+    }
   ],
   MATRICULA: [
     {

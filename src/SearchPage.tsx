@@ -14,15 +14,8 @@ const SearchPage = () => {
   const legalContent = getLegalContent(query);
 
   const getSearchResults = () => {
-    if (legalContent) {
-      return [
-        {
-          title: legalContent.title,
-          url: legalContent.url,
-          displayUrl: legalContent.source,
-          description: legalContent.content,
-        },
-      ];
+    if (query.toLowerCase().includes("penas")) {
+      return SCRIPT_RESULTS.PENAS;
     }
 
     if (query.toLowerCase().includes("ortiz")) {

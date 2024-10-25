@@ -30,12 +30,40 @@ export const PREDICTION_RESULTS: { [key: string]: string[] } = {
 export const getLegalContent = (query: string) => {
   if (query.toLowerCase().includes("penas por envenenamiento")) {
     return {
-      title:
-        'Art. 200: "Será reprimido con reclusión o prisión de tres a diez años',
-      content:
-        'el que envenenare o adulterare, de un modo peligroso para la salud, aguas potables o sustancias alimenticias o medicinales, destinadas al uso público o al consumo de una colectividad de personas".',
-      source: "Revista Pensamiento Penal",
-      url: "https://www.pensamientopenal.com.ar/cpc38027",
+      results: [
+        {
+          title:
+            'Art. 200: "Será reprimido con reclusión o prisión de tres a diez años',
+          content:
+            'el que envenenare o adulterare, de un modo peligroso para la salud, aguas potables o sustancias alimenticias o medicinales, destinadas al uso público o al consumo de una colectividad de personas".',
+          source: "Revista Pensamiento Penal",
+          url: "https://www.pensamientopenal.com.ar/cpc38027",
+        },
+        {
+          title:
+            'Art. 200: "Será reprimido con reclusión o prisión de tres a diez años',
+          content:
+            'el que envenenare o adulterare, de un modo peligroso para la salud, aguas potables o sustancias alimenticias o medicinales, destinadas al uso público o al consumo de una colectividad de personas".',
+          source: "Revista Pensamiento Penal",
+          url: "https://www.pensamientopenal.com.ar/cpc38027",
+        },
+        {
+          title:
+            'Art. 200: "Será reprimido con reclusión o prisión de tres a diez años',
+          content:
+            'el que envenenare o adulterare, de un modo peligroso para la salud, aguas potables o sustancias alimenticias o medicinales, destinadas al uso público o al consumo de una colectividad de personas".',
+          source: "Revista Pensamiento Penal",
+          url: "https://www.pensamientopenal.com.ar/cpc38027",
+        },
+        {
+          title:
+            'Art. 200: "Será reprimido con reclusión o prisión de tres a diez años',
+          content:
+            'el que envenenare o adulterare, de un modo peligroso para la salud, aguas potables o sustancias alimenticias o medicinales, destinadas al uso público o al consumo de una colectividad de personas".',
+          source: "Revista Pensamiento Penal",
+          url: "https://www.pensamientopenal.com.ar/cpc38027",
+        },
+      ],
       questions: [
         "¿Cuántos años de cárcel dan por envenenamiento?",
         "¿Qué dice el artículo 247 del Código Penal Argentino?",
