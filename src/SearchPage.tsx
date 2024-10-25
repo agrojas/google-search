@@ -44,7 +44,7 @@ const SearchPage = () => {
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="sticky top-0 bg-white border-b z-50">
-        <div className="flex items-center px-6 py-3">
+        <div className="flex items-center justify-between px-6 py-3">
           <Link to="/">
             <img
               src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_92x30dp.png"

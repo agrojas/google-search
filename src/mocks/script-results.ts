@@ -139,11 +139,243 @@ export const SCRIPT_RESULTS: SearchResults = {
   ],
   MATRICULA: [
     {
-      title: "Matrícula de Fumigador - Requisitos y Trámites",
-      url: "https://matriculafumigador.com",
-      displayUrl: "matriculafumigador.com › inicio",
+      title: "Matricula de fumigador",
+      url: "https://www.ccf.com/ar",
+      displayUrl: "www.ccf.com.ar › inicio",
       description:
-        "Requisitos y trámites para obtener la matrícula de fumigador en Argentina...",
+        "Matricula de fumigador, requisitos y trámites para obtener la habilitación...",
+      type: "general",
+    },
+    {
+      title: "Camara argentina de fumigadores",
+      url: "https://www.ccf.com/ar",
+      displayUrl: "www.ccf.com.ar › inicio",
+      description:
+        "Cámara argentina de fumigadores, noticias y eventos del sector...",
+      type: "general",
+    },
+    {
+      title: "Curso de Capacitación en Control de Plagas",
+      url: "https://www.ccf.com/ar/cursos",
+      displayUrl: "www.ccf.com.ar › cursos",
+      description:
+        "Formación profesional en control de plagas urbanas. Próximas fechas disponibles, modalidad presencial y virtual...",
+      type: "general",
+    },
+    {
+      title: "Registro Nacional de Empresas Fumigadoras",
+      url: "https://www.ccf.com/ar/registro",
+      displayUrl: "www.ccf.com.ar › registro",
+      description:
+        "Consulta el listado oficial de empresas fumigadoras habilitadas en Argentina. Verificá credenciales y permisos...",
+      type: "general",
+    },
+    {
+      title: "Normativa vigente para fumigadores | CCF",
+      url: "https://www.ccf.com/ar/normativa",
+      displayUrl: "www.ccf.com.ar › normativa",
+      description:
+        "Marco legal actualizado para la actividad de control de plagas. Leyes, decretos y disposiciones vigentes...",
+      type: "general",
+    },
+    {
+      title: "Renovación de Matrícula - Fumigadores",
+      url: "https://www.ccf.com/ar/renovacion",
+      displayUrl: "www.ccf.com.ar › renovacion",
+      description:
+        "Proceso de renovación de matrícula profesional. Documentación necesaria, aranceles y plazos...",
+      type: "general",
+    },
+    {
+      title: "Productos autorizados para fumigación",
+      url: "https://www.ccf.com/ar/productos",
+      displayUrl: "www.ccf.com.ar › productos",
+      description:
+        "Lista actualizada de productos aprobados para control de plagas. Fichas técnicas y recomendaciones de uso...",
+      type: "general",
+    },
+    {
+      title: "Calendario de Capacitaciones 2024",
+      url: "https://www.ccf.com/ar/calendario",
+      displayUrl: "www.ccf.com.ar › calendario",
+      description:
+        "Agenda de cursos, talleres y certificaciones para profesionales del control de plagas...",
+      type: "general",
+    },
+    {
+      title: "Directorio de Proveedores Certificados",
+      url: "https://www.ccf.com/ar/proveedores",
+      displayUrl: "www.ccf.com.ar › proveedores",
+      description:
+        "Encuentra proveedores autorizados de equipos y productos para fumigación. Listado verificado...",
+      type: "general",
+    },
+    {
+      title: "Protocolos de Seguridad en Fumigación",
+      url: "https://www.ccf.com/ar/protocolos",
+      displayUrl: "www.ccf.com.ar › protocolos",
+      description:
+        "Guías y procedimientos de seguridad para trabajos de fumigación. Medidas preventivas y EPP...",
+      type: "general",
+    },
+    {
+      title: "Asociarse a la Cámara de Fumigadores",
+      url: "https://www.ccf.com/ar/asociarse",
+      displayUrl: "www.ccf.com.ar › asociarse",
+      description:
+        "Beneficios y requisitos para asociarse a la CCF. Servicios exclusivos para miembros...",
+      type: "general",
+    },
+    {
+      title: "Control de Plagas en Industria Alimenticia",
+      url: "https://www.ccf.com/ar/industria-alimenticia",
+      displayUrl: "www.ccf.com.ar › industria-alimenticia",
+      description:
+        "Especializaciones y certificaciones para control de plagas en industria alimentaria. Normativas específicas...",
+      type: "general",
+    },
+    {
+      title: "Certificación MIP - Manejo Integrado de Plagas",
+      url: "https://www.ccf.com/ar/certificacion-mip",
+      displayUrl: "www.ccf.com.ar › certificacion-mip",
+      description:
+        "Programa de certificación profesional en Manejo Integrado de Plagas. Modalidad y contenidos...",
+      type: "general",
+    },
+    {
+      title: "Eventos y Congresos 2024 | CCF",
+      url: "https://www.ccf.com/ar/eventos",
+      displayUrl: "www.ccf.com.ar › eventos",
+      description:
+        "Calendario de eventos, congresos y exposiciones del sector. Networking y actualización profesional...",
+      type: "general",
+    },
+    {
+      title: "Biblioteca Técnica para Fumigadores",
+      url: "https://www.ccf.com/ar/biblioteca",
+      displayUrl: "www.ccf.com.ar › biblioteca",
+      description:
+        "Recursos técnicos, manuales y publicaciones especializadas en control de plagas...",
+      type: "general",
+    },
+    {
+      title: "Seguros Profesionales para Fumigadores",
+      url: "https://www.ccf.com/ar/seguros",
+      displayUrl: "www.ccf.com.ar › seguros",
+      description:
+        "Coberturas y planes de seguros específicos para la actividad. Requisitos y cotizaciones...",
+      type: "general",
+    },
+    {
+      title: "Denuncias y Reclamos | CCF",
+      url: "https://www.ccf.com/ar/denuncias",
+      displayUrl: "www.ccf.com.ar › denuncias",
+      description:
+        "Canal oficial para denuncias sobre servicios de fumigación irregular. Procedimiento y seguimiento...",
+      type: "general",
+    },
+    {
+      title: "Bolsa de Trabajo - Sector Fumigación",
+      url: "https://www.ccf.com/ar/empleos",
+      displayUrl: "www.ccf.com.ar › empleos",
+      description:
+        "Ofertas laborales en el sector de control de plagas. Búsquedas activas y perfiles solicitados...",
+      type: "general",
+    },
+    {
+      title: "Novedades y Noticias del Sector",
+      url: "https://www.ccf.com.ar/noticias",
+      displayUrl: "www.ccf.com.ar › noticias",
+      description:
+        "Últimas actualizaciones del sector de control de plagas. Novedades regulatorias y tecnológicas...",
+      type: "general",
+    },
+    {
+      title: "Asesoramiento Legal para Fumigadores",
+      url: "https://www.ccf.com.ar/legal",
+      displayUrl: "www.ccf.com.ar › legal",
+      description:
+        "Servicio de consultoría legal especializada en el sector. Asesoramiento en normativas y habilitaciones...",
+      type: "general",
+    },
+    {
+      title: "Equipamiento Profesional de Fumigación",
+      url: "https://www.ccf.com.ar/equipos",
+      displayUrl: "www.ccf.com.ar › equipos",
+      description:
+        "Guía de equipos y herramientas profesionales. Especificaciones técnicas y proveedores autorizados...",
+      type: "general",
+    },
+    {
+      title: "Certificación Ambiental para Fumigadores",
+      url: "https://www.ccf.com.ar/ambiental",
+      displayUrl: "www.ccf.com.ar › ambiental",
+      description:
+        "Programa de certificación en gestión ambiental para empresas fumigadoras. Estándares y auditorías...",
+      type: "general",
+    },
+    {
+      title: "Control de Plagas en Espacios Públicos",
+      url: "https://www.ccf.com.ar/espacios-publicos",
+      displayUrl: "www.ccf.com.ar › espacios-publicos",
+      description:
+        "Protocolos y requisitos para fumigación en áreas públicas. Permisos y coordinación con autoridades...",
+      type: "general",
+    },
+    {
+      title: "Foro Profesional de Fumigadores",
+      url: "https://www.ccf.com.ar/foro",
+      displayUrl: "www.ccf.com.ar › foro",
+      description:
+        "Espacio de intercambio entre profesionales del sector. Consultas técnicas y experiencias...",
+      type: "general",
+    },
+    {
+      title: "Manual de Buenas Prácticas en Fumigación",
+      url: "https://www.ccf.com.ar/manual",
+      displayUrl: "www.ccf.com.ar › manual",
+      description:
+        "Guía completa de procedimientos y estándares para el control profesional de plagas...",
+      type: "general",
+    },
+    {
+      title: "Calendario de Inspecciones 2024",
+      url: "https://www.ccf.com.ar/inspecciones",
+      displayUrl: "www.ccf.com.ar › inspecciones",
+      description:
+        "Cronograma de inspecciones y auditorías para empresas fumigadoras. Preparación y requisitos...",
+      type: "general",
+    },
+    {
+      title: "Servicios Especiales de Fumigación",
+      url: "https://www.ccf.com.ar/servicios-especiales",
+      displayUrl: "www.ccf.com.ar › servicios-especiales",
+      description:
+        "Información sobre servicios específicos: tratamientos térmicos, fumigación de contenedores, control aviar...",
+      type: "general",
+    },
+    {
+      title: "Gestión de Residuos en Fumigación",
+      url: "https://www.ccf.com.ar/residuos",
+      displayUrl: "www.ccf.com.ar › residuos",
+      description:
+        "Protocolos para el manejo responsable de residuos de fumigación. Normativa ambiental vigente...",
+      type: "general",
+    },
+    {
+      title: "Programa de Mentoría para Fumigadores",
+      url: "https://www.ccf.com.ar/mentoria",
+      displayUrl: "www.ccf.com.ar › mentoria",
+      description:
+        "Sistema de acompañamiento para nuevos profesionales del sector. Tutorías y desarrollo profesional...",
+      type: "general",
+    },
+    {
+      title: "Certificación en Control de Plagas Urbanas",
+      url: "https://www.ccf.com.ar/certificacion-urbana",
+      displayUrl: "www.ccf.com.ar › certificacion-urbana",
+      description:
+        "Programa especializado en control de plagas en entornos urbanos. Metodologías y prácticas...",
       type: "general",
     },
   ],

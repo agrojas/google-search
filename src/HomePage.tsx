@@ -31,7 +31,7 @@ function HomePage() {
     if (normalizedQuery.includes("pen")) {
       return PREDICTION_RESULTS.PENAS;
     }
-    if (normalizedQuery.includes("ort")) {
+    if (normalizedQuery.includes("dr") || normalizedQuery.includes("ort")) {
       return PREDICTION_RESULTS.ORTIZ;
     }
 
