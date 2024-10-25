@@ -10,63 +10,79 @@ export const IMAGE_RESULTS: { [key: string]: ImageResult[] } = {
   ORTIZ: [
     {
       id: 1,
-      title: "Dr. Javier Ortiz - Ginecólogo",
+      title: "Clinica Galilea - Dr. Ortiz",
       thumbnail:
-        "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=300&fit=crop",
-      source: "CIM",
-      link: "https://www.consultoriointegral.com.ar",
+        "https://firebasestorage.googleapis.com/v0/b/search-54df5.appspot.com/o/clinica-galilea-1.jpeg?alt=media&token=6a1281bb-bfba-486d-82a8-d6dd5da495ea",
+      source: "Clinica Galilea",
+      link: "https://www.clinica-galilea.com.ar",
     },
     {
       id: 2,
-      title: "Doctor Guillermo Ortiz",
+      title: "Clinica Galilea - Sucursal",
       thumbnail:
-        "https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&h=300&fit=crop",
-      source: "Revista Factum",
-      link: "https://www.revistafactum.com",
+        "https://firebasestorage.googleapis.com/v0/b/search-54df5.appspot.com/o/clinica-galilea-2.jpeg?alt=media&token=6a1281bb-bfba-486d-82a8-d6dd5da495ea",
+      source: "Clinica Galilea Factum",
+      link: "https://www.clinica-galilea.com.ar",
     },
     {
       id: 3,
-      title: "SAEGRE | El Prof. Dr. Daniel Ortiz",
+      title: "Clinica Galilea - Turnos",
       thumbnail:
-        "https://images.unsplash.com/photo-1622902046580-2b47f47f5471?w=400&h=300&fit=crop",
-      source: "Instagram",
-      link: "https://www.instagram.com/saegre",
+        "https://firebasestorage.googleapis.com/v0/b/search-54df5.appspot.com/o/clinica-galilea-3.jpeg?alt=media&token=6a1281bb-bfba-486d-82a8-d6dd5da495ea",
+      source: "Clinica Galilea",
+      link: "https://www.clinica-galilea.com.ar",
     },
     {
       id: 4,
-      title: "Mi equipo y yo siempre",
+      title: "Clinica Galilea - Atencion",
       thumbnail:
-        "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=400&h=300&fit=crop",
-      source: "Facebook",
-      link: "https://www.facebook.com",
+        "https://firebasestorage.googleapis.com/v0/b/search-54df5.appspot.com/o/clinica-galilea-4.jpeg?alt=media&token=6a1281bb-bfba-486d-82a8-d6dd5da495ea",
+      source: "Clinica Galilea",
+      link: "https://www.clinica-galilea.com.ar",
     },
     {
       id: 5,
-      title: "Centro De Comercio",
+      title: "Clinica Galilea - Consultas",
       thumbnail:
-        "https://images.unsplash.com/photo-1622253694242-0ce4896468c5?w=400&h=300&fit=crop",
-      source: "Facebook",
-      link: "https://www.facebook.com",
+        "https://firebasestorage.googleapis.com/v0/b/search-54df5.appspot.com/o/clinica-galilea-5.jpeg?alt=media&token=6a1281bb-bfba-486d-82a8-d6dd5da495ea",
+      source: "Clinica Galilea",
+      link: "https://www.clinica-galilea.com.ar",
     },
     {
       id: 6,
-      title: "Diario de Cuyo",
+      title: "Clinica Galilea - Servicios",
       thumbnail:
-        "https://images.unsplash.com/photo-1651008376896-a5b5c7c8d311?w=400&h=300&fit=crop",
-      source: "Instagram",
-      link: "https://www.instagram.com",
+        "https://firebasestorage.googleapis.com/v0/b/search-54df5.appspot.com/o/clinica-galilea-6.jpeg?alt=media&token=6a1281bb-bfba-486d-82a8-d6dd5da495ea",
+      source: "Clinica Galilea",
+      link: "https://www.clinica-galilea.com.ar",
+    },
+    {
+      id: 7,
+      title: "Clinica Galilea - Ubicacion",
+      thumbnail:
+        "https://firebasestorage.googleapis.com/v0/b/search-54df5.appspot.com/o/clinica-galilea-7.jpeg?alt=media&token=6a1281bb-bfba-486d-82a8-d6dd5da495ea",
+      source: "Clinica Galilea",
+      link: "https://www.clinica-galilea.com.ar",
+    },
+    {
+      id: 8,
+      title: "Clinica Galilea - Horarios",
+      thumbnail:
+        "https://firebasestorage.googleapis.com/v0/b/search-54df5.appspot.com/o/clinica-galilea-8.jpeg?alt=media&token=6a1281bb-bfba-486d-82a8-d6dd5da495ea",
+      source: "Clinica Galilea",
+      link: "https://www.clinica-galilea.com.ar",
     },
   ],
   BONAR: [],
   PENAS: [],
   MATRICULA: [
     {
-      "id": 1,
-      "title": "Matrícula de Fumigador",
-      "thumbnail": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=300&fit=crop",
-      "source": "CIM",
-      "link": "https://www.consultoriointegral.com.ar"
-
-    }
+      id: 1,
+      title: "Matrícula de Fumigador",
+      thumbnail:
+        "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=300&fit=crop",
+      source: "Clinica Galilea",
+      link: "https://www.clinica-galilea.com.ar",
+    },
   ],
 };
