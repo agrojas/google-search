@@ -1,6 +1,6 @@
 export const PREDICTION_RESULTS: { [key: string]: string[] } = {
   ORTIZ: [
-    "dr ortiz clínica galilea",
+    "dr ortiz",
     "dr ortiz cardiólogo",
     "dr ortiz cirujano",
     "dr ortiz especialista",
@@ -10,6 +10,11 @@ export const PREDICTION_RESULTS: { [key: string]: string[] } = {
     "dr ortiz investigaciones",
     "dr ortiz publicaciones",
     "dr ortiz premios",
+  ],
+  GALILEA: [
+    "clinica galilea",
+    "clinica galilea especialidades",
+    "clinica galilea turnos",
   ],
   PENAS: [
     "penas por envenenamiento",

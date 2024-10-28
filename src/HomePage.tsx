@@ -42,6 +42,10 @@ function HomePage() {
     if (normalizedQuery.includes("mat") || normalizedQuery.includes("fum")) {
       return PREDICTION_RESULTS.MATRICULA;
     }
+
+    if (normalizedQuery.includes("cli") || normalizedQuery.includes("gal")) {
+      return PREDICTION_RESULTS.GALILEA;
+    }
     return [];
   };
 

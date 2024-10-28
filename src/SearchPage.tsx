@@ -1,9 +1,17 @@
 import React, { useState } from "react";
 import { useSearchParams, Link } from "react-router-dom";
-import { Search, Mic, Camera, Settings, Menu, ChevronDown } from "lucide-react";
-import ImageResults from "./components/ImageResults";
+import {
+  Search,
+  Mic,
+  Camera,
+  Settings,
+  Menu,
+  ChevronDown,
+  MapPin,
+} from "lucide-react";
 import { getLegalContent } from "./mocks/predictions";
-import { SCRIPT_RESULTS } from "./mocks/script-results";
+import { SCRIPT_RESULTS, SearchResult } from "./mocks/script-results";
+import ImageResults from "./components/ImageResults";
 
 const SearchPage = () => {
   const [searchParams] = useSearchParams();
@@ -17,7 +25,6 @@ const SearchPage = () => {
     if (query.toLowerCase().includes("penas")) {
       return SCRIPT_RESULTS.PENAS;
     }
-
     if (query.toLowerCase().includes("ortiz")) {
       return SCRIPT_RESULTS.ORTIZ;
     }
@@ -27,7 +34,9 @@ const SearchPage = () => {
     if (query.toLowerCase().includes("matricula")) {
       return SCRIPT_RESULTS.MATRICULA;
     }
-
+    if (query.toLowerCase().includes("galilea")) {
+      return SCRIPT_RESULTS.GALILEA;
+    }
     return [];
   };
 
@@ -129,28 +138,90 @@ const SearchPage = () => {
         </p>
 
         {activeTab === "todo" ? (
-          <div>
-            {searchResults.map((result, index) => (
-              <div key={index} className="mb-8">
-                <div className="flex items-start">
-                  <div>
-                    <p className="text-sm text-gray-600">{result.displayUrl}</p>
-                    <h3 className="text-xl mb-1">
-                      <a
-                        href={result.url}
-                        className="text-blue-800 hover:underline visited:text-purple-900"
-                      >
-                        {result.title}
-                      </a>
-                    </h3>
-                    <p className="text-sm text-gray-600 leading-6">
-                      {result.description}
-                    </p>
+          <>
+            {/* Link Results */}
+            <div className="mb-8">
+              {searchResults.map((result: SearchResult, index: number) => (
+                <div key={index} className="mb-6">
+                  <div className="flex flex-col">
+                    <div className="flex items-start">
+                      <div className="flex-grow">
+                        <p className="text-sm text-gray-600 flex items-center">
+                          {result.displayUrl}
+                          {result.location && (
+                            <span className="flex items-center ml-2">
+                              <MapPin className="h-4 w-4 mr-1" />
+                              {result.location}
+                            </span>
+                          )}
+                        </p>
+                        <h3 className="text-xl mb-1">
+                          <a
+                            href={result.url}
+                            className="text-blue-800 hover:underline visited:text-purple-900"
+                          >
+                            {result.title}
+                          </a>
+                        </h3>
+                        {result.address && (
+                          <p className="text-sm text-gray-700 mb-2">
+                            {result.address}
+                          </p>
+                        )}
+                        <p className="text-sm text-gray-600 leading-6">
+                          {result.description}
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
 
+            {/* Images Section */}
+            {searchResults.length > 0 && (
+              <div className="mb-8">
+                <h2 className="text-lg mb-4">Imágenes</h2>
+                <div className="grid grid-cols-3 gap-4">
+                  {searchResults
+                    .filter(
+                      (result) => result.images && result.images.length > 0
+                    )
+                    .slice(0, 3)
+                    .map((result, index) =>
+                      result.images?.map((image, imgIndex) => (
+                        <div
+                          key={`${index}-${imgIndex}`}
+                          className="relative group"
+                        >
+                          <a href={result.url} className="block">
+                            <img
+                              src={image.src}
+                              alt={image.alt}
+                              className="w-full h-40 object-cover rounded-lg"
+                            />
+                            <div className="mt-2">
+                              <p className="text-sm text-gray-800 truncate">
+                                {result.title}
+                              </p>
+                              <p className="text-xs text-gray-500">
+                                {image.source}
+                              </p>
+                            </div>
+                          </a>
+                        </div>
+                      ))
+                    )}
+                </div>
+                <div className="mt-4">
+                  <a href="#" className="text-sm text-blue-600 hover:underline">
+                    Más imágenes de {query}
+                  </a>
+                </div>
+              </div>
+            )}
+
+            {/* Legal Content Section */}
             {legalContent && (
               <div className="mt-8">
                 <h2 className="text-xl mb-4">Más preguntas</h2>
@@ -182,7 +253,7 @@ const SearchPage = () => {
                 ))}
               </div>
             )}
-          </div>
+          </>
         ) : (
           <ImageResults />
         )}

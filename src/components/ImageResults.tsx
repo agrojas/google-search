@@ -47,15 +47,18 @@ const ImageResults = () => {
     if (normalizedQuery.includes("penas")) {
       scriptResult = IMAGE_RESULTS.PENAS;
     }
-     if (normalizedQuery.includes("ortiz")) {
-       scriptResult = IMAGE_RESULTS.ORTIZ;
-     }
-      if (normalizedQuery.includes("bonar")) {
-        scriptResult = IMAGE_RESULTS.BONAR;
-      }
-       if (normalizedQuery.includes("matricula")) {
-         scriptResult = IMAGE_RESULTS.MATRICULA;
-       }
+    if (normalizedQuery.includes("ortiz")) {
+      scriptResult = IMAGE_RESULTS.ORTIZ;
+    }
+    if (normalizedQuery.includes("bonar")) {
+      scriptResult = IMAGE_RESULTS.BONAR;
+    }
+    if (normalizedQuery.includes("matricula")) {
+      scriptResult = IMAGE_RESULTS.MATRICULA;
+    }
+    if (normalizedQuery.includes("galilea")) {
+      scriptResult = IMAGE_RESULTS.GALILEA;
+    }
     if (scriptResult) {
       setCurrentImages(scriptResult);
       setSearchMetrics({
@@ -74,10 +77,6 @@ const ImageResults = () => {
 
   return (
     <>
-      <p className="text-sm text-gray-600 mb-5">
-        Cerca de {searchMetrics.total.toLocaleString()} resultados (
-        {searchMetrics.time} segundos)
-      </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {currentImages.map((image) => (

@@ -7,12 +7,13 @@ export interface ImageResult {
 }
 
 export const IMAGE_RESULTS: { [key: string]: ImageResult[] } = {
-  ORTIZ: [
+  ORTIZ:[],
+  GALILEA: [
     {
       id: 1,
       title: "Clinica Galilea - Dr. Ortiz",
       thumbnail:
-        "https://firebasestorage.googleapis.com/v0/b/search-54df5.appspot.com/o/clinica-galilea-1.jpeg?alt=media&token=6a1281bb-bfba-486d-82a8-d6dd5da495ea",
+        "/assets/images/clinica-galilea-1.jpeg",
       source: "Clinica Galilea",
       link: "https://www.clinica-galilea.com.ar",
     },
@@ -20,7 +21,7 @@ export const IMAGE_RESULTS: { [key: string]: ImageResult[] } = {
       id: 2,
       title: "Clinica Galilea - Sucursal",
       thumbnail:
-        "https://firebasestorage.googleapis.com/v0/b/search-54df5.appspot.com/o/clinica-galilea-2.jpeg?alt=media&token=6a1281bb-bfba-486d-82a8-d6dd5da495ea",
+        "/assets/images/clinica-galilea-2.jpeg",
       source: "Clinica Galilea Factum",
       link: "https://www.clinica-galilea.com.ar",
     },
@@ -28,7 +29,7 @@ export const IMAGE_RESULTS: { [key: string]: ImageResult[] } = {
       id: 3,
       title: "Clinica Galilea - Turnos",
       thumbnail:
-        "https://firebasestorage.googleapis.com/v0/b/search-54df5.appspot.com/o/clinica-galilea-3.jpeg?alt=media&token=6a1281bb-bfba-486d-82a8-d6dd5da495ea",
+        "/assets/images/clinica-galilea-3.jpeg",
       source: "Clinica Galilea",
       link: "https://www.clinica-galilea.com.ar",
     },
@@ -36,7 +37,7 @@ export const IMAGE_RESULTS: { [key: string]: ImageResult[] } = {
       id: 4,
       title: "Clinica Galilea - Atencion",
       thumbnail:
-        "https://firebasestorage.googleapis.com/v0/b/search-54df5.appspot.com/o/clinica-galilea-4.jpeg?alt=media&token=6a1281bb-bfba-486d-82a8-d6dd5da495ea",
+        "/assets/images/clinica-galilea-4.jpeg",
       source: "Clinica Galilea",
       link: "https://www.clinica-galilea.com.ar",
     },
@@ -44,7 +45,7 @@ export const IMAGE_RESULTS: { [key: string]: ImageResult[] } = {
       id: 5,
       title: "Clinica Galilea - Consultas",
       thumbnail:
-        "https://firebasestorage.googleapis.com/v0/b/search-54df5.appspot.com/o/clinica-galilea-5.jpeg?alt=media&token=6a1281bb-bfba-486d-82a8-d6dd5da495ea",
+        "/assets/images/clinica-galilea-5.jpeg",
       source: "Clinica Galilea",
       link: "https://www.clinica-galilea.com.ar",
     },
@@ -52,7 +53,7 @@ export const IMAGE_RESULTS: { [key: string]: ImageResult[] } = {
       id: 6,
       title: "Clinica Galilea - Servicios",
       thumbnail:
-        "https://firebasestorage.googleapis.com/v0/b/search-54df5.appspot.com/o/clinica-galilea-6.jpeg?alt=media&token=6a1281bb-bfba-486d-82a8-d6dd5da495ea",
+        "/assets/images/clinica-galilea-6.jpeg",
       source: "Clinica Galilea",
       link: "https://www.clinica-galilea.com.ar",
     },
@@ -60,7 +61,7 @@ export const IMAGE_RESULTS: { [key: string]: ImageResult[] } = {
       id: 7,
       title: "Clinica Galilea - Ubicacion",
       thumbnail:
-        "https://firebasestorage.googleapis.com/v0/b/search-54df5.appspot.com/o/clinica-galilea-7.jpeg?alt=media&token=6a1281bb-bfba-486d-82a8-d6dd5da495ea",
+        "/assets/images/clinica-galilea-7.jpeg",
       source: "Clinica Galilea",
       link: "https://www.clinica-galilea.com.ar",
     },
@@ -68,7 +69,7 @@ export const IMAGE_RESULTS: { [key: string]: ImageResult[] } = {
       id: 8,
       title: "Clinica Galilea - Horarios",
       thumbnail:
-        "https://firebasestorage.googleapis.com/v0/b/search-54df5.appspot.com/o/clinica-galilea-8.jpeg?alt=media&token=6a1281bb-bfba-486d-82a8-d6dd5da495ea",
+        "/assets/images/clinica-galilea-8.jpeg",
       source: "Clinica Galilea",
       link: "https://www.clinica-galilea.com.ar",
     },
@@ -164,9 +165,9 @@ export const IMAGE_RESULTS: { [key: string]: ImageResult[] } = {
       id: 1,
       title: "Matrícula de Fumigador",
       thumbnail:
-        "https://firebasestorage.googleapis.com/v0/b/search-54df5.appspot.com/o/matricula.jpeg?alt=media&token=a11e6c2a-6694-4fd6-b61c-36e4a7701a4b",
+        "/assets/images/matricula.jpeg",
       source: "Camara de control de Fumigadores",
-      link: "https://firebasestorage.googleapis.com/v0/b/search-54df5.appspot.com/o/matricula.jpeg?alt=media&token=a11e6c2a-6694-4fd6-b61c-36e4a7701a4b",
+      link: "/assets/images/matricula.jpeg",
     },
     {
       id: 2,

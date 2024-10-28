@@ -5,6 +5,13 @@ export type SearchResult = {
   displayUrl: string;
   description?: string;
   type: "medical" | "notes" | "general";
+  location?: string;
+  address?: string;
+  images?: {
+    src: string;
+    alt: string;
+    source: string;
+  }[];
 };
 
 export type SearchResults = {
@@ -14,29 +21,75 @@ export type SearchResults = {
 export const SCRIPT_RESULTS: SearchResults = {
   ORTIZ: [
     {
-      title: "Dr. Ortiz - Clínica Galilea | Medicina Funcional",
-      url: "https://clinicagalilea.com/dr-ortiz",
-      displayUrl: "clinicagalilea.com › especialistas",
+      title: "Dr. Roberto O. Ortiz opiniones - Cirujano General",
+      url: "https://www.doctoralia.com.ar/roberto-ortiz",
+      displayUrl: "doctoralia.com.ar › Corrientes",
       description:
-        "Especialista en Medicina Funcional y Sistémica. Más de 15 años de experiencia en tratamientos integrativos. Consultas presenciales y virtuales disponibles. Horarios flexibles.",
+        "Consultorio privado. GRAL MANUEL BELGRANO 1079, Corrientes · (mapa) · Ampliar. Este especialista no ofrece reserva online en esta dirección.",
+      location: "Corrientes",
+      address: "GRAL MANUEL BELGRANO 1079",
       type: "medical",
+      images: [
+        {
+          src: "/assets/images/dr-ortiz-1.jpeg",
+          alt: "Dr. Roberto Ortiz - Cirujano General",
+          source: "Doctoralia",
+        },
+      ],
     },
     {
-      title: "Equipo Médico - Clínica Galilea | Dr. Ortiz",
-      url: "https://clinicagalilea.com/equipo-medico",
-      displayUrl: "clinicagalilea.com › equipo-medico",
+      title: "Dr. Javier Ortiz - Sociedad Argentina de Cirugía Plástica",
+      url: "https://www.sapcv.org.ar/dr-javier-ortiz",
+      displayUrl: "sapcv.org.ar › profesionales",
       description:
-        "El Dr. Ortiz lidera nuestro equipo de medicina funcional. Conoce su trayectoria, especialidades y enfoque terapéutico integrador. Formación internacional en medicina funcional.",
+        "Especialista en Cirugía Plástica y Reparadora. Miembro titular de la Sociedad Argentina de Cirugía Plástica. Consultorios en Recoleta y Belgrano.",
+      location: "Buenos Aires",
+      address: "Av. Santa Fe 1589, Recoleta",
       type: "medical",
+      images: [
+        {
+          src: "/assets/images/dr-ortiz-2.jpeg",
+          alt: "Dr. Javier Ortiz - Cirujano Plástico",
+          source: "SAPCV",
+        },
+      ],
     },
     {
-      title: "Turnos Online - Dr. Ortiz | Clínica Galilea",
-      url: "https://clinicagalilea.com/turnos/dr-ortiz",
-      displayUrl: "clinicagalilea.com › turnos",
+      title: "Dr. Sebastián Ortiz | Rosario - Especialista en Cardiología",
+      url: "https://www.facebook.com/drsebastianortiz",
+      displayUrl: "facebook.com › drsebastianortiz",
       description:
-        "Reserva tu consulta con el Dr. Ortiz. Sistema de turnos online 24/7. Primera consulta y seguimientos. Obras sociales y prepagas aceptadas.",
+        "Cardiólogo especialista en Medicina Interna. Atención personalizada en Rosario. Consultas y estudios cardiológicos completos.",
+      location: "Rosario",
+      address: "San Lorenzo 876",
       type: "medical",
+      images: [
+        {
+          src: "/assets/images/dr-ortiz-1.jpeg",
+          alt: "Dr. Sebastián Ortiz - Cardiólogo",
+          source: "Facebook",
+        },
+      ],
     },
+    {
+      title: "Dr. Pablo Nicolas Ortiz - Sociedad Argentina de Pediatría",
+      url: "https://www.sap.org.ar/dr-pablo-ortiz",
+      displayUrl: "sap.org.ar › profesionales",
+      description:
+        "Pediatra especializado en desarrollo infantil. Miembro de la Sociedad Argentina de Pediatría. Atención integral del niño y adolescente.",
+      location: "Buenos Aires",
+      address: "Av. Cabildo 2457",
+      type: "medical",
+      images: [
+        {
+          src: "https://images.unsplash.com/photo-1622902046580-2b47f47f5471",
+          alt: "Dr. Pablo Nicolas Ortiz - Pediatra",
+          source: "SAP",
+        },
+      ],
+    },
+  ],
+  GALILEA: [
     {
       title: "Clínica Galilea - Sede Central | Atención Personalizada",
       url: "https://clinicagalilea.com/sedes/central",
@@ -70,43 +123,19 @@ export const SCRIPT_RESULTS: SearchResults = {
       type: "medical",
     },
     {
-      title: "Opiniones - Dr. Ortiz | Clínica Galilea",
-      url: "https://clinicagalilea.com/opiniones/dr-ortiz",
-      displayUrl: "clinicagalilea.com › opiniones",
+      title: "Clínica Galilea - Sede Central | Atención Personalizada",
+      url: "https://clinicagalilea.com/sedes/central",
+      displayUrl: "clinicagalilea.com › sedes",
       description:
-        "Testimonios de pacientes del Dr. Ortiz. Experiencias reales con tratamientos funcionales. Valoración promedio 4.8/5 basada en más de 200 opiniones.",
+        "Visita nuestra sede central donde atiende el Dr. Ortiz. Instalaciones modernas, tecnología de última generación. Estacionamiento propio y fácil acceso.",
       type: "medical",
     },
     {
-      title: "Clínica Galilea (@ClinicaGalilea) | Twitter",
-      url: "https://twitter.com/ClinicaGalilea",
-      displayUrl: "twitter.com › ClinicaGalilea",
+      title: "Medicina Funcional - Tratamientos | Clínica Galilea",
+      url: "https://clinicagalilea.com/tratamientos-funcionales",
+      displayUrl: "clinicagalilea.com › tratamientos",
       description:
-        "Sigue las actualizaciones del Dr. Ortiz y Clínica Galilea. Noticias, eventos y consejos de salud. Mantente informado sobre nuevos tratamientos y servicios.",
-      type: "medical",
-    },
-    {
-      title: "Dr. Ortiz - Entrevistas | Clínica Galilea YouTube",
-      url: "https://youtube.com/ClinicaGalilea",
-      displayUrl: "youtube.com › ClinicaGalilea",
-      description:
-        "Canal oficial de Clínica Galilea. Entrevistas y charlas del Dr. Ortiz sobre medicina funcional. Videos educativos y casos de éxito.",
-      type: "medical",
-    },
-    {
-      title: "Clínica Galilea - Servicios Médicos | Dr. Ortiz",
-      url: "https://clinicagalilea.com/servicios",
-      displayUrl: "clinicagalilea.com › servicios",
-      description:
-        "Conoce todos nuestros servicios médicos. Consultas con el Dr. Ortiz, análisis funcionales, terapias complementarias y programas de seguimiento personalizados.",
-      type: "medical",
-    },
-    {
-      title: "Contacto - Dr. Ortiz | Clínica Galilea",
-      url: "https://clinicagalilea.com/contacto",
-      displayUrl: "clinicagalilea.com › contacto",
-      description:
-        "Información de contacto del Dr. Ortiz. Consultas, dudas y emergencias. Horarios de atención: Lunes a Viernes de 9:00 a 18:00hs.",
+        "Descubre los tratamientos funcionales del Dr. Ortiz. Abordaje integral de patologías crónicas, trastornos metabólicos y enfermedades autoinmunes.",
       type: "medical",
     },
   ],
@@ -296,7 +325,7 @@ export const SCRIPT_RESULTS: SearchResults = {
       displayUrl: "Abogados Penalistas",
       url: "https://www.abogadopenalista.com.ar/art203",
       type: "notes",
-    }
+    },
   ],
   MATRICULA: [
     {
