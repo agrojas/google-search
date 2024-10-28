@@ -31,7 +31,7 @@ export const SCRIPT_RESULTS: SearchResults = {
       type: "medical",
       images: [
         {
-          src: "/public/assets/images/ortiz/dr-ortiz-1.jpeg",
+          src: "/assets/images/ortiz/dr-ortiz-1.jpeg",
           alt: "Dr. Roberto Ortiz - Cirujano General",
           source: "Doctoralia",
         },
@@ -48,7 +48,7 @@ export const SCRIPT_RESULTS: SearchResults = {
       type: "medical",
       images: [
         {
-          src: "/public/assets/images/ortiz/dr-ortiz-2.jpeg",
+          src: "/assets/images/ortiz/dr-ortiz-2.jpeg",
           alt: "Dr. Javier Ortiz - Cirujano Plástico",
           source: "SAPCV",
         },
@@ -65,7 +65,7 @@ export const SCRIPT_RESULTS: SearchResults = {
       type: "medical",
       images: [
         {
-          src: "/public/assets/images/ortiz/dr-ortiz-1.jpeg",
+          src: "/assets/images/ortiz/dr-ortiz-1.jpeg",
           alt: "Dr. Sebastián Ortiz - Cardiólogo",
           source: "Facebook",
         },
@@ -99,7 +99,7 @@ export const SCRIPT_RESULTS: SearchResults = {
       type: "medical",
       images: [
         {
-          src: "/public/assets/images/galilea/clinica-galilea-1.jpeg",
+          src: "/assets/images/galilea/clinica-galilea-1.jpeg",
           alt: "Dr. Sebastián Ortiz - Cardiólogo",
           source: "Facebook",
         },
@@ -114,7 +114,7 @@ export const SCRIPT_RESULTS: SearchResults = {
       type: "medical",
       images: [
         {
-          src: "/public/assets/images/galilea/clinica-galilea-2.jpeg",
+          src: "/assets/images/galilea/clinica-galilea-2.jpeg",
           alt: "Dr. Sebastián Ortiz - Cardiólogo",
           source: "Facebook",
         },
@@ -129,7 +129,7 @@ export const SCRIPT_RESULTS: SearchResults = {
       type: "medical",
       images: [
         {
-          src: "/public/assets/images/galilea/clinica-galilea-3.jpeg",
+          src: "/assets/images/galilea/clinica-galilea-3.jpeg",
           alt: "Dr. Sebastián Ortiz - Cardiólogo",
           source: "Facebook",
         },
