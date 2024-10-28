@@ -7,7 +7,51 @@ export interface ImageResult {
 }
 
 export const IMAGE_RESULTS: { [key: string]: ImageResult[] } = {
-  ORTIZ: [],
+  ORTIZ: [
+    {
+      id: 1,
+      title: "Dr Ortiz - Consultorio",
+      thumbnail: "/assets/images/ortiz/dr-ortiz-1.jpeg",
+      source: "Dr Ortiz",
+      link: "/assets/images/ortiz/dr-ortiz-1.jpeg",
+    },
+    {
+      id: 2,
+      title: "Dr Ortiz - Consulta",
+      thumbnail: "/assets/images/ortiz/dr-ortiz-2.jpeg",
+      source: "Dr Ortiz",
+      link: "/assets/images/ortiz/dr-ortiz-2.jpeg",
+    },
+    {
+      id: 3,
+      title: "Dr Ortiz - Turnos",
+      thumbnail: "/assets/images/ortiz/dr-ortiz-3.jpeg",
+      source: "Dr Ortiz",
+      link: "/assets/images/ortiz/dr-ortiz-3.jpeg"
+    },
+    {
+      id: 4,
+      title: "Dr Ortiz - Atencion",
+      thumbnail: "/assets/images/ortiz/dr-ortiz-4.jpeg",
+      source: "Dr Ortiz",
+      link: "/assets/images/ortiz/dr-ortiz-4.jpeg"
+    },
+    {
+      id: 5,
+      title: "Dr Ortiz - Consultas",
+      thumbnail: "/assets/images/ortiz/dr-ortiz-5.jpeg",
+      source: "Dr Ortiz",
+      link: "/assets/images/ortiz/dr-ortiz-5.jpeg"
+    },
+    {
+      id: 6,
+      title: "Dr Ortiz - Servicios",
+      thumbnail: "/assets/images/ortiz/dr-ortiz-6.jpeg",
+      source: "Dr Ortiz",
+      link: "/assets/images/ortiz/dr-ortiz-6.jpeg"
+    }
+
+  ],
   GALILEA: [
     {
       id: 1,
