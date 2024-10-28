@@ -31,7 +31,7 @@ export const SCRIPT_RESULTS: SearchResults = {
       type: "medical",
       images: [
         {
-          src: "/assets/images/ortiz/dr-ortiz-1.jpeg",
+          src: "/assets/images/ortiz/dr-ortiz-3.jpeg",
           alt: "Dr. Roberto Ortiz - Cirujano General",
           source: "Doctoralia",
         },
@@ -48,25 +48,25 @@ export const SCRIPT_RESULTS: SearchResults = {
       type: "medical",
       images: [
         {
-          src: "/assets/images/ortiz/dr-ortiz-2.jpeg",
+          src: "/assets/images/ortiz/dr-ortiz-4.jpeg",
           alt: "Dr. Javier Ortiz - Cirujano Plástico",
           source: "SAPCV",
         },
       ],
     },
     {
-      title: "Dr. Sebastián Ortiz | Rosario - Especialista en Cardiología",
+      title: "Dr. Sebastián Ortiz | Rosario - Especialista en Mastologia",
       url: "https://www.facebook.com/drsebastianortiz",
       displayUrl: "facebook.com › drsebastianortiz",
       description:
-        "Cardiólogo especialista en Medicina Interna. Atención personalizada en Rosario. Consultas y estudios cardiológicos completos.",
+        "Mastólogo especialista en Medicina Interna. Atención personalizada en Rosario. Consultas y estudios mastologicos completos.",
       location: "Rosario",
       address: "San Lorenzo 876",
       type: "medical",
       images: [
         {
           src: "/assets/images/ortiz/dr-ortiz-1.jpeg",
-          alt: "Dr. Sebastián Ortiz - Cardiólogo",
+          alt: "Dr. Sebastián Ortiz - Mastólogo",
           source: "Facebook",
         },
       ],
