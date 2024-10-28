@@ -7,69 +7,61 @@ export interface ImageResult {
 }
 
 export const IMAGE_RESULTS: { [key: string]: ImageResult[] } = {
-  ORTIZ:[],
+  ORTIZ: [],
   GALILEA: [
     {
       id: 1,
       title: "Clinica Galilea - Dr. Ortiz",
-      thumbnail:
-        "/assets/images/clinica-galilea-1.jpeg",
+      thumbnail: "/assets/images/galilea/clinica-galilea-1.jpeg",
       source: "Clinica Galilea",
       link: "https://www.clinica-galilea.com.ar",
     },
     {
       id: 2,
       title: "Clinica Galilea - Sucursal",
-      thumbnail:
-        "/assets/images/clinica-galilea-2.jpeg",
+      thumbnail: "/assets/images/galilea/clinica-galilea-2.jpeg",
       source: "Clinica Galilea Factum",
       link: "https://www.clinica-galilea.com.ar",
     },
     {
       id: 3,
       title: "Clinica Galilea - Turnos",
-      thumbnail:
-        "/assets/images/clinica-galilea-3.jpeg",
+      thumbnail: "/assets/images/galilea/clinica-galilea-3.jpeg",
       source: "Clinica Galilea",
       link: "https://www.clinica-galilea.com.ar",
     },
     {
       id: 4,
       title: "Clinica Galilea - Atencion",
-      thumbnail:
-        "/assets/images/clinica-galilea-4.jpeg",
+      thumbnail: "/assets/images/galilea/clinica-galilea-4.jpeg",
       source: "Clinica Galilea",
       link: "https://www.clinica-galilea.com.ar",
     },
     {
       id: 5,
       title: "Clinica Galilea - Consultas",
-      thumbnail:
-        "/assets/images/clinica-galilea-5.jpeg",
+      thumbnail: "/assets/images/galilea/clinica-galilea-5.jpeg",
       source: "Clinica Galilea",
       link: "https://www.clinica-galilea.com.ar",
     },
     {
       id: 6,
       title: "Clinica Galilea - Servicios",
-      thumbnail:
-        "/assets/images/clinica-galilea-6.jpeg",
+      thumbnail: "/assets/images/galilea/clinica-galilea-6.jpeg",
       source: "Clinica Galilea",
       link: "https://www.clinica-galilea.com.ar",
     },
     {
       id: 7,
       title: "Clinica Galilea - Ubicacion",
-      thumbnail:
-        "/assets/images/clinica-galilea-7.jpeg",
+      thumbnail: "/assets/images/galilea/clinica-galilea-7.jpeg",
       source: "Clinica Galilea",
       link: "https://www.clinica-galilea.com.ar",
     },
     {
       id: 8,
       title: "Clinica Galilea - Horarios",
-      thumbnail:
-        "/assets/images/clinica-galilea-8.jpeg",
+      thumbnail: "/assets/images/galilea/clinica-galilea-8.jpeg",
       source: "Clinica Galilea",
       link: "https://www.clinica-galilea.com.ar",
     },
@@ -164,120 +156,105 @@ export const IMAGE_RESULTS: { [key: string]: ImageResult[] } = {
     {
       id: 1,
       title: "Matrícula de Fumigador",
-      thumbnail:
-        "/assets/images/matricula.jpeg",
+      thumbnail: "/assets/images/matricula/matricula.jpeg",
       source: "Camara de control de Fumigadores",
-      link: "/assets/images/matricula.jpeg",
+      link: "/assets/images/matricula/matricula.jpeg",
     },
     {
       id: 2,
       title: "Certificación Profesional de Control de Plagas",
-      thumbnail:
-        "https://images.pexels.com/photos/5726794/pexels-photo-5726794.jpeg",
+      thumbnail: "/assets/images/matricula/fumigacion-1.jpg",
       source: "Asociación de Controladores de Plagas",
       link: "https://www.acp.org.ar",
     },
     {
       id: 3,
       title: "Curso de Manipulación de Productos Químicos",
-      thumbnail:
-        "https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg",
+      thumbnail: "/assets/images/matricula/fumigacion-2.jpg",
       source: "Instituto de Seguridad Química",
       link: "https://www.isq.edu.ar",
     },
     {
       id: 4,
       title: "Licencia Ambiental para Fumigadores",
-      thumbnail:
-        "https://images.pexels.com/photos/8471899/pexels-photo-8471899.jpeg",
+      thumbnail: "/assets/images/matricula/fumigacion-3.jpg",
       source: "Ministerio de Ambiente",
       link: "https://www.ambiente.gob.ar",
     },
     {
       id: 5,
       title: "Certificado de Bioseguridad",
-      thumbnail:
-        "https://images.pexels.com/photos/4099469/pexels-photo-4099469.jpeg",
+      thumbnail: "/assets/images/matricula/fumigacion-4.jpg",
       source: "Consejo de Bioseguridad",
       link: "https://www.bioseguridad.org.ar",
     },
     {
       id: 6,
       title: "Registro Nacional de Empresas Fumigadoras",
-      thumbnail:
-        "https://img.freepik.com/vector-gratis/ilustracion-concepto-control-plagas_114360-24973.jpg?semt=ais_hybrid",
+      thumbnail: "/assets/images/matricula/fumigacion-5.jpg",
       source: "Registro Nacional",
       link: "https://www.registrofumigadores.gob.ar",
     },
     {
       id: 7,
       title: "Curso de Control de Plagas Urbanas",
-      thumbnail:
-        "https://images.pexels.com/photos/8471928/pexels-photo-8471928.jpeg",
+      thumbnail: "/assets/images/matricula/fumigacion-6.jpg",
       source: "Centro de Capacitación Técnica",
       link: "https://www.capacitacion-plagas.com",
     },
     {
       id: 8,
       title: "Certificación en Manejo Integrado de Plagas",
-      thumbnail:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT5ox8AJb4UMS3ZoKCgesHOYA_IqZ7tlovQA&s",
+      thumbnail: "/assets/images/matricula/fumigacion-7.jpg",
       source: "Instituto MIP",
       link: "https://www.institutomip.org",
     },
     {
       id: 9,
       title: "Habilitación Municipal para Fumigadores",
-      thumbnail:
-        "https://www.traconsa.com/wp-content/uploads/2020/12/control-periodico-plagas-scaled.jpg",
+      thumbnail: "/assets/images/matricula/fumigacion-8.jpg",
       source: "Municipalidad",
       link: "https://www.municipal-habilitaciones.gob.ar",
     },
     {
       id: 10,
       title: "Curso de Seguridad en Fumigaciones",
-      thumbnail:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA-7Tl1XVZs9wcg_KSCDQMu6spM7VYLOGX-Q&s",
+      thumbnail: "/assets/images/matricula/fumigacion-9.jpg",
       source: "Seguridad Laboral Argentina",
       link: "https://www.seguridadlaboral.org",
     },
     {
       id: 11,
       title: "Certificación Internacional de Control de Plagas",
-      thumbnail:
-        "https://images.pexels.com/photos/5726836/pexels-photo-5726836.jpeg",
+      thumbnail: "/assets/images/matricula/fumigacion-10.jpg",
       source: "International Pest Control Association",
       link: "https://www.ipca.org",
     },
     {
       id: 12,
       title: "Registro de Aplicadores Certificados",
-      thumbnail:
-        "https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg",
+      thumbnail: "/assets/images/matricula/fumigacion-11.jpg",
       source: "Registro Nacional de Aplicadores",
       link: "https://www.rna.gob.ar",
     },
     {
       id: 13,
       title: "Curso de Control de Plagas en Industria Alimenticia",
-      thumbnail:
-        "https://images.pexels.com/photos/8472024/pexels-photo-8472024.jpeg",
+      thumbnail: "/assets/images/matricula/fumigacion-12.jpg",
       source: "Instituto de Seguridad Alimentaria",
       link: "https://www.isa.edu.ar",
     },
     {
       id: 14,
       title: "Certificación en Control de Vectores",
-      thumbnail:
-        "https://images.pexels.com/photos/4482939/pexels-photo-4482939.jpeg",
+      thumbnail: "/assets/images/matricula/fumigacion-13.jpg",
       source: "Dirección de Control de Vectores",
       link: "https://www.controlvectores.gob.ar",
     },
     {
       id: 15,
       title: "Matrícula Provincial de Fumigadores",
-      thumbnail:
-        "https://images.pexels.com/photos/8472065/pexels-photo-8472065.jpeg",
+      thumbnail: "/assets/images/matricula/fumigacion-14.jpg",
       source: "Gobierno Provincial",
       link: "https://www.matriculas-prov.gob.ar",
     },
@@ -285,7 +262,7 @@ export const IMAGE_RESULTS: { [key: string]: ImageResult[] } = {
       id: 16,
       title: "Curso de Actualización en Control de Plagas",
       thumbnail:
-        "https://images.pexels.com/photos/4483228/pexels-photo-4483228.jpeg",
+        "https://images.pexels.com/photos/5726787/pexels-photo-5726787.jpeg",
       source: "Centro de Estudios Técnicos",
       link: "https://www.cetec.edu.ar",
     },
@@ -293,7 +270,7 @@ export const IMAGE_RESULTS: { [key: string]: ImageResult[] } = {
       id: 17,
       title: "Certificación en Manejo de Plaguicidas",
       thumbnail:
-        "https://images.pexels.com/photos/4482925/pexels-photo-4482925.jpeg",
+        "https://images.pexels.com/photos/5726787/pexels-photo-5726787.jpeg",
       source: "Instituto de Plaguicidas",
       link: "https://www.plaguicidas.org.ar",
     },
@@ -327,7 +304,7 @@ export const IMAGE_RESULTS: { [key: string]: ImageResult[] } = {
       thumbnail:
         "https://images.pexels.com/photos/4483578/pexels-photo-4483578.jpeg",
       source: "Asociación Industrial",
-      link: "https://www.fumigacion-industrial.org.ar",
+      link: "https://www.fumigacion-indutrial.org.ar",
     },
   ],
 };
