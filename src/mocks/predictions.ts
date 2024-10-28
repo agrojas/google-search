@@ -1,7 +1,7 @@
 export const PREDICTION_RESULTS: { [key: string]: string[] } = {
   ORTIZ: [
     "dr ortiz",
-    "dr ortiz cardiólogo",
+    "dr ortiz mastólogo",
     "dr ortiz cirujano",
     "dr ortiz especialista",
     "dr ortiz tratamientos",
