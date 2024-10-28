@@ -97,6 +97,13 @@ export const SCRIPT_RESULTS: SearchResults = {
       description:
         "Visita nuestra sede central donde atiende el Dr. Ortiz. Instalaciones modernas, tecnología de última generación. Estacionamiento propio y fácil acceso.",
       type: "medical",
+      images: [
+        {
+          src: "/public/assets/images/galilea/clinica-galilea-1.jpeg",
+          alt: "Dr. Sebastián Ortiz - Cardiólogo",
+          source: "Facebook",
+        },
+      ],
     },
     {
       title: "Medicina Funcional - Tratamientos | Clínica Galilea",
@@ -105,6 +112,13 @@ export const SCRIPT_RESULTS: SearchResults = {
       description:
         "Descubre los tratamientos funcionales del Dr. Ortiz. Abordaje integral de patologías crónicas, trastornos metabólicos y enfermedades autoinmunes.",
       type: "medical",
+      images: [
+        {
+          src: "/public/assets/images/galilea/clinica-galilea-2.jpeg",
+          alt: "Dr. Sebastián Ortiz - Cardiólogo",
+          source: "Facebook",
+        },
+      ],
     },
     {
       title: "Dr. Ortiz - Conferencias y Eventos | Clínica Galilea",
@@ -113,6 +127,13 @@ export const SCRIPT_RESULTS: SearchResults = {
       description:
         "Calendario de conferencias y talleres del Dr. Ortiz. Temas: medicina funcional, nutrición terapéutica y salud integrativa. Inscripciones abiertas.",
       type: "medical",
+      images: [
+        {
+          src: "/public/assets/images/galilea/clinica-galilea-3.jpeg",
+          alt: "Dr. Sebastián Ortiz - Cardiólogo",
+          source: "Facebook",
+        },
+      ],
     },
     {
       title: "Blog Salud - Dr. Ortiz | Clínica Galilea",

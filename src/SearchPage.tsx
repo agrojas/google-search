@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useSearchParams, Link } from "react-router-dom";
 import {
   Search,
@@ -18,6 +18,7 @@ const SearchPage = () => {
   const query = searchParams.get("q") || "";
   const [activeTab, setActiveTab] = useState("todo");
   const [expandedQuestion, setExpandedQuestion] = useState<string | null>(null);
+  const [showSearchImages, setShowSearchImages] = useState(false);
 
   const legalContent = getLegalContent(query);
 
@@ -29,6 +30,7 @@ const SearchPage = () => {
       return SCRIPT_RESULTS.ORTIZ;
     }
     if (query.toLowerCase().includes("bonar")) {
+      
       return SCRIPT_RESULTS.BONAR;
     }
     if (query.toLowerCase().includes("matricula")) {
@@ -39,6 +41,14 @@ const SearchPage = () => {
     }
     return [];
   };
+
+  useEffect(() => {
+
+    setShowSearchImages(
+      query.toLowerCase().includes("ortiz") ||
+        query.toLowerCase().includes("galilea")
+    );
+  },[query]);
 
   const searchResults = getSearchResults();
 
@@ -179,7 +189,7 @@ const SearchPage = () => {
             </div>
 
             {/* Images Section */}
-            {searchResults.length > 0 && (
+            {searchResults.length > 0 && showSearchImages && (
               <div className="mb-8">
                 <h2 className="text-lg mb-4">Imágenes</h2>
                 <div className="grid grid-cols-3 gap-4">
