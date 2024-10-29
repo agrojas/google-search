@@ -28,22 +28,22 @@ function HomePage() {
 
   const getPredictions = (query: string) => {
     const normalizedQuery = query.toLowerCase();
-    if (normalizedQuery.includes("pen") || normalizedQuery.includes("env")) {
+    if (normalizedQuery.includes("pe") || normalizedQuery.includes("en")) {
       return PREDICTION_RESULTS.PENAS;
     }
-    if (normalizedQuery.includes("dr") || normalizedQuery.includes("ort")) {
+    if (normalizedQuery.includes("dr") || normalizedQuery.includes("or")) {
       return PREDICTION_RESULTS.ORTIZ;
     }
 
-    if (normalizedQuery.includes("bon") || normalizedQuery.includes("aut")) {
+    if (normalizedQuery.includes("bo") || normalizedQuery.includes("au")) {
       return PREDICTION_RESULTS.BONAR;
     }
 
-    if (normalizedQuery.includes("mat") || normalizedQuery.includes("fum")) {
+    if (normalizedQuery.includes("ma") || normalizedQuery.includes("fu")) {
       return PREDICTION_RESULTS.MATRICULA;
     }
 
-    if (normalizedQuery.includes("cli") || normalizedQuery.includes("gal")) {
+    if (normalizedQuery.includes("cl") || normalizedQuery.includes("ga")) {
       return PREDICTION_RESULTS.GALILEA;
     }
     return [];
