@@ -65,7 +65,7 @@ export const SCRIPT_RESULTS: SearchResults = {
       type: "medical",
       images: [
         {
-          src: "/assets/images/ortiz/dr-ortiz-1.jpeg",
+          src: "/assets/images/ortiz/dr-ortiz-0.jpg",
           alt: "Dr. Sebastián Ortiz - Mastólogo",
           source: "Facebook",
         },
