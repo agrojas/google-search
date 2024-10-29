@@ -202,7 +202,7 @@ export const IMAGE_RESULTS: { [key: string]: ImageResult[] } = {
       title: "Matrícula de Fumigador",
       thumbnail: "/assets/images/matricula/matricula.jpeg",
       source: "Camara de control de Fumigadores",
-      link: "/assets/images/matricula/matricula.jpeg",
+      link: "/assets/documents/matricula/site.pdf",
     },
     {
       id: 2,
