@@ -38,8 +38,8 @@ export const SCRIPT_RESULTS: SearchResults = {
       ],
     },
     {
-      title: "Dr. Javier Ortiz - Sociedad Argentina de Cirugía Plástica",
-      url: "https://www.sapcv.org.ar/dr-javier-ortiz",
+      title: "Dra. Susana Ortiz - Sociedad Argentina de Cirugía Plástica",
+      url: "https://www.sapcv.org.ar/dra-susana-ortiz",
       displayUrl: "sapcv.org.ar › profesionales",
       description:
         "Especialista en Cirugía Plástica y Reparadora. Miembro titular de la Sociedad Argentina de Cirugía Plástica. Consultorios en Recoleta y Belgrano.",
@@ -48,8 +48,8 @@ export const SCRIPT_RESULTS: SearchResults = {
       type: "medical",
       images: [
         {
-          src: "/assets/images/ortiz/dr-ortiz-4.jpeg",
-          alt: "Dr. Javier Ortiz - Cirujano Plástico",
+          src: "/assets/images/ortiz/dr-ortiz-5.jpeg",
+          alt: "Dr. Susana Ortiz - Cirujano Plástico",
           source: "SAPCV",
         },
       ],

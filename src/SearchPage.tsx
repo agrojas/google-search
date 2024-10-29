@@ -224,7 +224,7 @@ const SearchPage = () => {
                     )}
                 </div>
                 <div className="mt-4">
-                  <a href="#" className="text-sm text-blue-600 hover:underline">
+                  <a onClick={() => setActiveTab("imagenes")} href="#" className="text-sm text-blue-600 hover:underline">
                     Más imágenes de {query}
                   </a>
                 </div>
