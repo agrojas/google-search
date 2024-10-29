@@ -31,7 +31,7 @@ export const SCRIPT_RESULTS: SearchResults = {
       type: "medical",
       images: [
         {
-          src: "/assets/images/ortiz/dr-ortiz-3.jpeg",
+          src: "/assets/images/ortiz/dr-ortiz-7.jpeg",
           alt: "Dr. Roberto Ortiz - Cirujano General",
           source: "Doctoralia",
         },
@@ -55,19 +55,19 @@ export const SCRIPT_RESULTS: SearchResults = {
       ],
     },
     {
-      title: "Dr. Sebastián Ortiz | Rosario - Especialista en Mastologia",
-      url: "https://www.facebook.com/drsebastianortiz",
-      displayUrl: "facebook.com › drsebastianortiz",
+      title: "Dr. Miguel A. Ortiz | Olivos - Especialista en Mastologia",
+      url: "https://www.clinica-galilea.com/drsebastianortiz",
+      displayUrl: "clinica-galilea.com › drmiguelaortiz",
       description:
-        "Mastólogo especialista en Medicina Interna. Atención personalizada en Rosario. Consultas y estudios mastologicos completos.",
-      location: "Rosario",
-      address: "San Lorenzo 876",
+        "Mastólogo especialista en Medicina Interna. Atención personalizada en Olivos. Consultas y estudios mastologicos completos.",
+      location: "Olivos",
+      address: "Av. Maipú 500",
       type: "medical",
       images: [
         {
           src: "/assets/images/ortiz/dr-ortiz-0.jpg",
-          alt: "Dr. Sebastián Ortiz - Mastólogo",
-          source: "Facebook",
+          alt: "Miguel A. Ortiz - Mastólogo",
+          source: "clinica-galilea",
         },
       ],
     },
