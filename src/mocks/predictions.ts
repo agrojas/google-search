@@ -42,7 +42,7 @@ export const getLegalContent = (query: string) => {
           content:
             'el que envenenare o adulterare, de un modo peligroso para la salud, aguas potables o sustancias alimenticias o medicinales, destinadas al uso público o al consumo de una colectividad de personas".',
           source: "Revista Pensamiento Penal",
-          url: "https://www.pensamientopenal.com.ar/cpc38027",
+          url: "/assets/documents/penas/penas.pdf",
         },
         {
           title:

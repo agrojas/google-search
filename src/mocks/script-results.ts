@@ -307,12 +307,11 @@ export const SCRIPT_RESULTS: SearchResults = {
   ],
   PENAS: [
     {
-      title:
-        'Art. 200: "Será reprimido con reclusión o prisión de tres a diez años',
+      title: 'Art. 200: "Será reprimido con reclusión ...',
       description:
         'el que envenenare o adulterare, de un modo peligroso para la salud, aguas potables o sustancias alimenticias o medicinales, destinadas al uso público o al consumo de una colectividad de personas".',
-      displayUrl: "Revista Pensamiento Penal",
-      url: "https://www.pensamientopenal.com.ar/cpc38027",
+      displayUrl: "Código Penal de la Nación",
+      url: "/assets/documents/penas/penas.pdf",
       type: "notes",
     },
     {
