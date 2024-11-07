@@ -22,8 +22,8 @@ export const SCRIPT_RESULTS: SearchResults = {
   ORTIZ: [
     {
       title: "Dr. Roberto O. Ortiz opiniones - Cirujano General",
-      url: "https://www.medicosenred.COM/roberto-ortiz",
-      displayUrl: "medicosenred.COM › Corrientes",
+      url: "https://www.medicosenred.com/roberto-ortiz",
+      displayUrl: "medicosenred.com › Corrientes",
       description:
         "Consultorio privado. GRAL MANUEL BELGRANO 1079, Corrientes · (mapa) · Ampliar. Este especialista no ofrece reserva online en esta dirección.",
       location: "Corrientes",
