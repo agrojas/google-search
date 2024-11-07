@@ -22,8 +22,8 @@ export const SCRIPT_RESULTS: SearchResults = {
   ORTIZ: [
     {
       title: "Dr. Roberto O. Ortiz opiniones - Cirujano General",
-      url: "https://www.doctoralia.com.ar/roberto-ortiz",
-      displayUrl: "doctoralia.com.ar › Corrientes",
+      url: "https://www.medicosenred.COM/roberto-ortiz",
+      displayUrl: "medicosenred.COM › Corrientes",
       description:
         "Consultorio privado. GRAL MANUEL BELGRANO 1079, Corrientes · (mapa) · Ampliar. Este especialista no ofrece reserva online en esta dirección.",
       location: "Corrientes",
@@ -33,16 +33,16 @@ export const SCRIPT_RESULTS: SearchResults = {
         {
           src: "/assets/images/ortiz/dr-ortiz-7.jpeg",
           alt: "Dr. Roberto Ortiz - Cirujano General",
-          source: "Doctoralia",
+          source: "MEDICOSENRED",
         },
       ],
     },
     {
-      title: "Dra. Susana Ortiz - Sociedad Argentina de Cirugía Plástica",
-      url: "https://www.sapcv.org.ar/dra-susana-ortiz",
-      displayUrl: "sapcv.org.ar › profesionales",
+      title: "Dra. Susana Ortiz - Federación Global de Cirugía Reconstructiva y Estética",
+      url: "https://www.fgcre.org.ar/dra-susana-ortiz",
+      displayUrl: "fgcre.org.ar › profesionales",
       description:
-        "Especialista en Cirugía Plástica y Reparadora. Miembro titular de la Sociedad Argentina de Cirugía Plástica. Consultorios en Recoleta y Belgrano.",
+        "Especialista en Cirugía Plástica y Reparadora. Miembro titular de la Federación Global de Cirugía Reconstructiva y Estética. Consultorios en Recoleta y Belgrano.",
       location: "Buenos Aires",
       address: "Av. Santa Fe 1589, Recoleta",
       type: "medical",
@@ -50,7 +50,7 @@ export const SCRIPT_RESULTS: SearchResults = {
         {
           src: "/assets/images/ortiz/dr-ortiz-5.jpeg",
           alt: "Dr. Susana Ortiz - Cirujano Plástico",
-          source: "SAPCV",
+          source: "FGCRE",
         },
       ],
     },

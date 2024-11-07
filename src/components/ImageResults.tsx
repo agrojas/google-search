@@ -16,7 +16,7 @@ const DEFAULT_IMAGE_RESULTS: ImageResult[] = [
     title: "Dr. Ortiz realizando una consulta",
     thumbnail: "/api/placeholder/300/200",
     link: "https://example.com/image2",
-    source: "doctoralia.com.ar",
+    source: "MEDICOSENRED.COM",
   },
   {
     id: 3,
